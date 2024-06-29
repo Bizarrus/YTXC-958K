@@ -17,3 +17,6 @@ This product is a wireless router that is permanently installed on the wall in c
 
 > [!CAUTION]
 > Warning: The power provided by the USB interface is only used to charge battery-powered devices, other loads must not be used, otherwise it may cause damage to the device and the manufacturer will not bear any consequences.
+
+# Great Tutorials
+![YouTube](Images/Icons/YouTube.png) [Finding UART and Getting a Root Shell on a Linux Router](https://www.youtube.com/watch?v=HWJddAd2T5Q)
