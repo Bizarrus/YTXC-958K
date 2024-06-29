@@ -1,6 +1,8 @@
 # YTXC-958K
 China WiFi-Router
 
+![Device](Images/Preview.jpg) 
+
 ## Produkt informations
 This product is a wireless router that is permanently installed on the wall in conjunction with a standard wall switch socket. It is suitable for wireless wireless network coverage in modern homes and hotels, enterprises, schools, small office areas and other places. This product integrates wireless routing, PPPoE dial-up Internet access, USB charging, wireless relay, wireless AP and other functions into one. It has powerful functions, stable performance, convenient installation, simple settings and beautiful appearance.
 
