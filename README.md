@@ -6,8 +6,23 @@ China WiFi-Router
 ## Produkt informations
 This product is a wireless router that is permanently installed on the wall in conjunction with a standard wall switch socket. It is suitable for wireless wireless network coverage in modern homes and hotels, enterprises, schools, small office areas and other places. This product integrates wireless routing, PPPoE dial-up Internet access, USB charging, wireless relay, wireless AP and other functions into one. It has powerful functions, stable performance, convenient installation, simple settings and beautiful appearance.
 
-## Functional features
+## Possible Manufacturer
+- Outenga
+- Bcsongben
+- Wallpad
+- Waizmann
 
+## Hardware
+- **CPU:** Mediatek MT7628NN (580 MHz)
+- **RAM:** 64 MB
+- **Storage:** 8 MB Flash
+- 1x USB 2.0 Port (Front)
+- 1x 100 Mbit LAN (Front)
+- 1x 100 Mbit LAN (Back)
+- 2.4 Ghz WiFi (with 2 internal antennas)
+- **OS:** OpenWrt Linux/Ubuntu
+
+## Functional features
 - Integrate into the wall and provide a luxurious appearance.
 - Hidden reset button, more secure and reliable.
 - Support LAND output, wired and wireless networks can be selected at will.
