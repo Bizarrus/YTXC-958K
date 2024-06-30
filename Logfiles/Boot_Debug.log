@@ -1,0 +1,1040 @@
+[04010C0A][04000D07]
+
+DDR Calibration DQS reg = 00008785
+
+
+
+U-Boot 1.1.3 (Dec 25 2017 - 22:59:38)
+
+
+Board: Ralink APSoC DRAM:  64 MB
+
+relocate_code Pointer at: 83fb8000
+
+flash manufacture id: ef, device id 40 17
+
+find flash: W25Q64BV
+
+*** Warning - bad CRC, using default environment
+
+
+============================================ 
+
+Ralink UBoot Version: 4.3.0.0
+
+-------------------------------------------- 
+
+ASIC 7628_MP (Port5<->None)
+
+DRAM component: 512 Mbits DDR, width 16
+
+DRAM bus: 16 bit
+
+Total memory: 64 MBytes
+
+Flash component: SPI Flash
+
+Date:Dec 25 2017  Time:22:59:38
+
+============================================ 
+
+icache: sets:512, ways:4, linesz:32 ,total:65536
+
+dcache: sets:256, ways:4, linesz:32 ,total:32768 
+
+
+ ##### The CPU freq = 580 MHZ #### 
+
+ estimate memory size =64 Mbytes
+
+RESET MT7628 PHY!!!!!!
+
+Please choose the operation: 
+
+   1: Load system code to SDRAM via TFTP. 
+
+   2: Load system code then write to Flash via TFTP. 
+
+   3: Boot system code via Flash (default).
+
+   4: Entr boot command line interface.
+
+   7: Load Boot Loader code then write to Flash via Serial. 
+
+   9: Load Boot Loader code then write to Flash via TFTP. 
+
+default: 3
+
+ 4  3  2  1  0 
+
+   
+
+3: System Boot system code via Flash.
+
+## Booting image at bc050000 ...
+
+   Image Name:   OpenWrt Linux-3.10.14-p112871
+
+   Image Type:   MIPS Linux Kernel Image (lzma compressed)
+
+   Data Size:    1279753 Bytes =  1.2 MB
+
+   Load Address: 80000000
+
+   Entry Point:  80000000
+
+   Verifying Checksum ... OK
+
+   Uncompressing Kernel Image ... OK
+
+No initrd
+
+## Transferring control to Linux (at address 80000000) ...
+
+## Giving linux memsize in MB, 64
+
+
+Starting kernel ...
+
+
+
+LINUX started...
+
+ THIS IS ASIC
+[    0.000000] Linux version 3.10.14 (tonnyy@ubuntu) (gcc version 4.8.3 (OpenWrt/Linaro GCC 4.8-2014.04 unknown) ) #63 Sun Oct 27 23:00:22 CST 2019
+[    0.000000] 
+[    0.000000]  The CPU feqenuce set to 575 MHz
+[    0.000000] CPU0 revision is: 00019655 (MIPS 24KEc)
+[    0.000000] Software DMA cache coherency
+[    0.000000] Determined physical RAM map:
+[    0.000000]  memory: 04000000 @ 00000000 (usable)
+[    0.000000] Initrd not found or empty - disabling initrd
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x00000000-0x03ffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x00000000-0x03ffffff]
+[    0.000000] Primary instruction cache 64kB, 4-way, VIPT, linesize 32 bytes.
+[    0.000000] Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 16256
+[    0.000000] Kernel command line: console=ttyS1,57600n8 root=/dev/mtdblock5 rootfstype=squashfs,jffs2
+[    0.000000] PID hash table entries: 256 (order: -2, 1024 bytes)
+[    0.000000] Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Writing ErrCtl register=0002eaf6
+[    0.000000] Readback ErrCtl register=0002eaf6
+[    0.000000] Memory: 61020k/65536k available (2851k kernel code, 4472k reserved, 679k data, 180k init, 0k highmem)
+[    0.000000] NR_IRQS:128
+[    0.000000] console [ttyS1] enabled
+[    0.096000] Calibrating delay loop... 382.46 BogoMIPS (lpj=764928)
+[    0.128000] pid_max: default: 32768 minimum: 301
+[    0.132000] Mount-cache hash table entries: 512
+[    0.136000] NET: Registered protocol family 16
+[    0.140000] RALINK_GPIOMODE = 54050404 
+[    0.144000] RALINK_GPIOMODE = 54040404 
+[    0.244000] ***** Xtal 40MHz *****
+[    0.248000] start PCIe register access
+[    0.748000] RALINK_RSTCTRL = 2400000
+[    0.752000] RALINK_CLKCFG1 = fdbfffc0
+[    0.756000] 
+[    0.756000] *************** MT7628 PCIe RC mode *************
+[    1.256000] PCIE0 no card, disable it(RST&CLK)
+[    1.284000] bio: create slab <bio-0> at 0
+[    1.288000] usbcore: registered new interface driver usbfs
+[    1.292000] usbcore: registered new interface driver hub
+[    1.296000] usbcore: registered new device driver usb
+[    1.300000] cfg80211: Calling CRDA to update world regulatory domain
+[    1.304000] Switching to clocksource MIPS
+[    1.308000] NET: Registered protocol family 2
+[    1.320000] TCP established hash table entries: 512 (order: 0, 4096 bytes)
+[    1.332000] TCP bind hash table entries: 512 (order: -1, 2048 bytes)
+[    1.344000] TCP: Hash tables configured (established 512 bind 512)
+[    1.356000] TCP: reno registered
+[    1.364000] UDP hash table entries: 256(order: 0, 4096 bytes)
+[    1.376000] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    1.388000] NET: Registered protocol family 1
+[    1.396000] MTK/Ralink EHCI/OHCI init.
+[    1.408000] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.420000] jffs2: version 2.2. (NAND) (SUMMARY)  (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+[    1.440000] msgmni has been set to 119
+[    1.448000] io scheduler noop registered (default)
+[    1.468000] Serial: 8250/16550 driver, 2 ports, IRQ sharing disabled
+[    1.480000] serial8250: ttyS0 at MMIO 0x10000d00 (irq = 21) is a 16550A
+[    1.492000] serial8250: ttyS1 at MMIO 0x10000c00 (irq = 20) is a 16550A
+[    1.508000] Ralink gpio driver initialized
+[    1.516000] flash manufacture id: ef, device id 40 17
+[    1.528000] get_flash_id: ret: 0
+[    1.532000] W25Q64BV(ef 40170000) (8192 Kbytes)
+[    1.544000] mtd .name = raspi, .size = 0x00800000 (8M) .erasesize = 0x00010000 (64K) .numeraseregions = 0
+[    1.560000] Creating 5 MTD partitions on "raspi":
+[    1.572000] 0x000000000000-0x000000800000 : "ALL"
+[    1.584000] 0x000000000000-0x000000030000 : "Bootloader"
+[    1.596000] 0x000000030000-0x000000040000 : "Config"
+[    1.604000] 0x000000040000-0x000000050000 : "Factory"
+[    1.616000] 0x000000050000-0x000000800000 : "firmware"
+[    1.628000] 0x000000188749-0x000000800000 : "rootfs"
+[    1.640000] mtd: partition "rootfs" must either start or end on erase block boundary or be smaller than an erase block -- forcing read-only
+[    1.668000] mtd: partition "rootfs_data" created automatically, ofs=0x450000, len=0x3b0000
+[    1.684000] 0x000000450000-0x000000800000 : "rootfs_data"
+[    1.696000] GMAC1_MAC_ADRH -- : 0x0000e043
+[    1.704000] GMAC1_MAC_ADRL -- : 0xa513d93a
+[    1.712000] Ralink APSoC Ethernet Driver Initilization. v3.1  256 rx/tx descriptors allocated, mtu = 1500!
+[    1.732000] GMAC1_MAC_ADRH -- : 0x0000e043
+[    1.740000] GMAC1_MAC_ADRL -- : 0xa513d93a
+[    1.748000] PROC INIT OK!
+[    1.752000] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.768000] ehci-pci: EHCI PCI platform driver
+[    1.776000] ehci-platform: EHCI generic platform driver
+[    1.808000] ******MT7628 mtk phy
+[    1.812000] *****run project phy.
+[    1.828000] FM_OUT value: u4FmOut = 0(0x00000000)
+[    1.844000] FM_OUT value: u4FmOut = 125(0x0000007D)
+[    1.852000] FM detection done! loop = 1
+[    1.868000] SR calibration value u1SrCalVal = 7
+[    1.876000] *********Execute mt7628_phy_init!!
+[    1.884000] ehci-platform ehci-platform: EHCI Host Controller
+[    1.896000] ehci-platform ehci-platform: new USB bus registered, assigned bus number 1
+[    1.912000] ehci-platform ehci-platform: irq 18, io mem 0x101c0000
+[    1.936000] ehci-platform ehci-platform: USB 2.0 started, EHCI 1.00
+[    1.948000] hub 1-0:1.0: USB hub found
+[    1.956000] hub 1-0:1.0: 1 port detected
+[    1.964000] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.996000] *********Execute mt7628_phy_init!!
+[    2.004000] ohci-platform ohci-platform: Generic Platform OHCI Controller
+[    2.020000] ohci-platform ohci-platform: new USB bus registered, assigned bus number 2
+[    2.036000] ohci-platform ohci-platform: irq 18, io mem 0x101c1000
+[    2.108000] hub 2-0:1.0: USB hub found
+[    2.116000] hub 2-0:1.0: 1 port detected
+[    2.124000] TCP: cubic registered
+[    2.132000] NET: Registered protocol family 10
+[    2.140000] NET: Registered protocol family 17
+[    2.148000] 8021q: 802.1Q VLAN Support v1.8
+[    2.188000] registered taskstats version 1
+[    2.204000] VFS: Mounted root (squashfs filesystem) readonly on device 31:5.
+[    2.216000] Freeing unused kernel memory: 180K (80373000 - 803a0000)
+procd: Console is alive
+procd: - preinit -
+[    4.520000] Raeth v3.1 (Tasklet,SkbRecycle)
+[    4.528000] 
+[    4.528000] phy_tx_ring = 0x03f9b000, tx_ring = 0xa3f9b000
+[    4.544000] 
+[    4.544000] phy_rx_ring0 = 0x03f9c000, rx_ring0 = 0xa3f9c000
+[    4.572000] GMAC1_MAC_ADRH -- : 0x0000e043
+[    4.580000] GMAC1_MAC_ADRL -- : 0xa513d93a
+[    4.588000] RT305x_ESW: Link Status Changed
+Press the [f] key and hit [enter] to enter failsafe mode
+Press the [1], [2], [3] or [4] key and hit [enter] to select the debug level
+4
+kmod: ran 1 iterations
+[    6.260000] jffs2: notice: (238) jffs2_build_xattr_subsystem: complete building xattr subsystem, 8 of xdatum (0 unchecked, 7 orphan) and 91 of xref (0 dead, 80 orphan) found.
+block: extroot: no root or overlay mount defined
+jffs2 is ready
+jffs2 is ready
+[    6.380000] jffs2: notice: (235) jffs2_build_xattr_subsystem: complete building xattr subsystem, 8 of xdatum (0 unchecked, 7 orphan) and 91 of xref (0 dead, 80 orphan) found.
+switching to overlay
+[    6.428000] ra2880stop()...Done
+[    6.432000] Free TX/RX Ring Memory!
+procd: procd_state_next(90): Change state 0 -> 1
+procd: - early -
+procd: procd_coldplug(65): Launched coldplug instance, pid=243
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/platform\/ehci-platform\/usb1","SUBSYSTEM":"usb","MAJOR":"189","MINOR":"0","DEVNAME":"bus\/usb\/001\/001","DEVTYPE":"usb_device","DRIVER":"usb","PRODUCT":"1d6b\/2\/310","TYPE":"9\/0\/0","BUSNUM":"001","DEVNUM":"001","SEQNUM":"173"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/bus/usb/001/001procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/platform/ehci-platform/usb1procd: rule_handle_command(362):  SUBSYSTEM=usbprocd: rule_handle_command(362):  MAJOR=189procd: rule_handle_command(362):  MINOR=0procd: rule_handle_command(362):  DEVNAME=bus/usb/001/001procd: rule_handle_command(362):  DEVTYPE=usb_deviceprocd: rule_handle_command(362):  DRIVER=usbprocd: rule_handle_command(362):  PRODUCT=1d6b/2/310procd: rule_handle_command(362):  TYPE=9/0/0procd: rule_handle_command(362):  BUSNUM=001procd: rule_handle_command(362):  DEVNUM=001procd: rule_handle_command(362):  SEQNUM=173procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  usbprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/platform/ehci-platform/usb1procd: rule_handle_command(362):  SUBSYSTEM=usbprocd: rule_handle_command(362):  MAJOR=189procd: rule_handle_command(362):  MINOR=0procd: rule_handle_command(362):  DEVNAME=bus/usb/001/001procd: rule_handle_command(362):  DEVTYPE=usb_deviceprocd: rule_handle_command(362):  DRIVER=usbprocd: rule_handle_command(362):  PRODUCT=1d6b/2/310procd: rule_handle_command(362):  TYPE=9/0/0procd: rule_handle_command(362):  BUSNUM=001procd: rule_handle_command(362):  DEVNUM=001procd: rule_handle_command(362):  SEQNUM=173procd: rule_handle_command(363): 
+procd: queue_next(281): Launched hotplug exec instance, pid=297
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/platform\/ohci-platform\/usb2","SUBSYSTEM":"usb","MAJOR":"189","MINOR":"128","DEVNAME":"bus\/usb\/002\/001","DEVTYPE":"usb_device","DRIVER":"usb","PRODUCT":"1d6b\/1\/310","TYPE":"9\/0\/0","BUSNUM":"002","DEVNUM":"001","SEQNUM":"174"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/bus/usb/002/001procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/platform/ohci-platform/usb2procd: rule_handle_command(362):  SUBSYSTEM=usbprocd: rule_handle_command(362):  MAJOR=189procd: rule_handle_command(362):  MINOR=128procd: rule_handle_command(362):  DEVNAME=bus/usb/002/001procd: rule_handle_command(362):  DEVTYPE=usb_deviceprocd: rule_handle_command(362):  DRIVER=usbprocd: rule_handle_command(362):  PRODUCT=1d6b/1/310procd: rule_handle_command(362):  TYPE=9/0/0procd: rule_handle_command(362):  BUSNUM=002procd: rule_handle_command(362):  DEVNUM=001procd: rule_handle_command(362):  SEQNUM=174procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  usbprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/platform/ohci-platform/usb2procd: rule_handle_command(362):  SUBSYSTEM=usbprocd: rule_handle_command(362):  MAJOR=189procd: rule_handle_command(362):  MINOR=128procd: rule_handle_command(362):  DEVNAME=bus/usb/002/001procd: rule_handle_command(362):  DEVTYPE=usb_deviceprocd: rule_handle_command(362):  DRIVER=usbprocd: rule_handle_command(362):  PRODUCT=1d6b/1/310procd: rule_handle_command(362):  TYPE=9/0/0procd: rule_handle_command(362):  BUSNUM=002procd: rule_handle_command(362):  DEVNUM=001procd: rule_handle_command(362):  SEQNUM=174procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mem\/mem","SUBSYSTEM":"mem","MAJOR":"1","MINOR":"1","DEVNAME":"mem","SEQNUM":"175"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/memprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mem/memprocd: rule_handle_command(362):  SUBSYSTEM=memprocd: rule_handle_command(362):  MAJOR=1procd: rule_handle_command(362):  MINOR=1procd: rule_handle_command(362):  DEVNAME=memprocd: rule_handle_command(362):  SEQNUM=175procd: rule_handle_command(363): 
+procd: udevtrigger_complete(36): Finished udevtrigger
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mem\/full","SUBSYSTEM":"mem","MAJOR":"1","MINOR":"7","DEVNAME":"full","DEVMODE":"0666","SEQNUM":"176"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/fullprocd: rule_handle_command(357):  0666procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mem/fullprocd: rule_handle_command(362):  SUBSYSTEM=memprocd: rule_handle_command(362):  MAJOR=1procd: rule_handle_command(362):  MINOR=7procd: rule_handle_command(362):  DEVNAME=fullprocd: rule_handle_command(362):  DEVMODE=0666procd: rule_handle_command(362):  SEQNUM=176procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=297
+procd: queue_next(281): Launched hotplug exec instance, pid=319
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mem\/kmsg","SUBSYSTEM":"mem","MAJOR":"1","MINOR":"11","DEVNAME":"kmsg","DEVMODE":"0644","SEQNUM":"177"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/kmsgprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mem/kmsgprocd: rule_handle_command(362):  SUBSYSTEM=memprocd: rule_handle_command(362):  MAJOR=1procd: rule_handle_command(362):  MINOR=11procd: rule_handle_command(362):  DEVNAME=kmsgprocd: rule_handle_command(362):  DEVMODE=0644procd: rule_handle_command(362):  SEQNUM=177procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mem\/null","SUBSYSTEM":"mem","MAJOR":"1","MINOR":"3","DEVNAME":"null","DEVMODE":"0666","SEQNUM":"178"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/nullprocd: rule_handle_command(357):  0666procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mem/nullprocd: rule_handle_command(362):  SUBSYSTEM=memprocd: rule_handle_command(362):  MAJOR=1procd: rule_handle_command(362):  MINOR=3procd: rule_handle_command(362):  DEVNAME=nullprocd: rule_handle_command(362):  DEVMODE=0666procd: rule_handle_command(362):  SEQNUM=178procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mem\/port","SUBSYSTEM":"mem","MAJOR":"1","MINOR":"4","DEVNAME":"port","SEQNUM":"179"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/portprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mem/portprocd: rule_handle_command(362):  SUBSYSTEM=memprocd: rule_handle_command(362):  MAJOR=1procd: rule_handle_command(362):  MINOR=4procd: rule_handle_command(362):  DEVNAME=portprocd: rule_handle_command(362):  SEQNUM=179procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mem\/zero","SUBSYSTEM":"mem","MAJOR":"1","MINOR":"5","DEVNAME":"zero","DEVMODE":"0666","SEQNUM":"180"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/zeroprocd: rule_handle_command(357):  0666procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mem/zeroprocd: rule_handle_command(362):  SUBSYSTEM=memprocd: rule_handle_command(362):  MAJOR=1procd: rule_handle_command(362):  MINOR=5procd: rule_handle_command(362):  DEVNAME=zeroprocd: rule_handle_command(362):  DEVMODE=0666procd: rule_handle_command(362):  SEQNUM=180procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mem\/random","SUBSYSTEM":"mem","MAJOR":"1","MINOR":"8","DEVNAME":"random","DEVMODE":"0666","SEQNUM":"181"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/randomprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mem/randomprocd: rule_handle_command(362):  SUBSYSTEM=memprocd: rule_handle_command(362):  MAJOR=1procd: rule_handle_command(362):  MINOR=8procd: rule_handle_command(362):  DEVNAME=randomprocd: rule_handle_command(362):  DEVMODE=0666procd: rule_handle_command(362):  SEQNUM=181procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=319
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mem\/urandom","SUBSYSTEM":"mem","MAJOR":"1","MINOR":"9","DEVNAME":"urandom","DEVMODE":"0666","SEQNUM":"182"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/urandomprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mem/urandomprocd: rule_handle_command(362):  SUBSYSTEM=memprocd: rule_handle_command(362):  MAJOR=1procd: rule_handle_command(362):  MINOR=9procd: rule_handle_command(362):  DEVNAME=urandomprocd: rule_handle_command(362):  DEVMODE=0666procd: rule_handle_command(362):  SEQNUM=182procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd0","SUBSYSTEM":"mtd","MAJOR":"90","MINOR":"0","DEVNAME":"mtd0","DEVTYPE":"mtd","SEQNUM":"183"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtd0procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd0procd: rule_handle_command(362):  SUBSYSTEM=mtdprocd: rule_handle_command(362):  MAJOR=90procd: rule_handle_command(362):  MINOR=0procd: rule_handle_command(362):  DEVNAME=mtd0procd: rule_handle_command(362):  DEVTYPE=mtdprocd: rule_handle_command(362):  SEQNUM=183procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd1","SUBSYSTEM":"mtd","MAJOR":"90","MINOR":"2","DEVNAME":"mtd1","DEVTYPE":"mtd","SEQNUM":"184"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtd1procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd1procd: rule_handle_command(362):  SUBSYSTEM=mtdprocd: rule_handle_command(362):  MAJOR=90procd: rule_handle_command(362):  MINOR=2procd: rule_handle_command(362):  DEVNAME=mtd1procd: rule_handle_command(362):  DEVTYPE=mtdprocd: rule_handle_command(362):  SEQNUM=184procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd2","SUBSYSTEM":"mtd","MAJOR":"90","MINOR":"4","DEVNAME":"mtd2","DEVTYPE":"mtd","SEQNUM":"185"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtd2procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd2procd: rule_handle_command(362):  SUBSYSTEM=mtdprocd: rule_handle_command(362):  MAJOR=90procd: rule_handle_command(362):  MINOR=4procd: rule_handle_command(362):  DEVNAME=mtd2procd: rule_handle_command(362):  DEVTYPE=mtdprocd: rule_handle_command(362):  SEQNUM=185procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd3","SUBSYSTEM":"mtd","MAJOR":"90","MINOR":"6","DEVNAME":"mtd3","DEVTYPE":"mtd","SEQNUM":"186"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtd3procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd3procd: rule_handle_command(362):  SUBSYSTEM=mtdprocd: rule_handle_command(362):  MAJOR=90procd: rule_handle_command(362):  MINOR=6procd: rule_handle_command(362):  DEVNAME=mtd3procd: rule_handle_command(362):  DEVTYPE=mtdprocd: rule_handle_command(362):  SEQNUM=186procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd4","SUBSYSTEM":"mtd","MAJOR":"90","MINOR":"8","DEVNAME":"mtd4","DEVTYPE":"mtd","SEQNUM":"187"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtd4procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd4procd: rule_handle_command(362):  SUBSYSTEM=mtdprocd: rule_handle_command(362):  MAJOR=90procd: rule_handle_command(362):  MINOR=8procd: rule_handle_command(362):  DEVNAME=mtd4procd: rule_handle_command(362):  DEVTYPE=mtdprocd: rule_handle_command(362):  SEQNUM=187procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd5","SUBSYSTEM":"mtd","MAJOR":"90","MINOR":"10","DEVNAME":"mtd5","DEVTYPE":"mtd","SEQNUM":"188"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtd5procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd5procd: rule_handle_command(362):  SUBSYSTEM=mtdprocd: rule_handle_command(362):  MAJOR=90procd: rule_handle_command(362):  MINOR=10procd: rule_handle_command(362):  DEVNAME=mtd5procd: rule_handle_command(362):  DEVTYPE=mtdprocd: rule_handle_command(362):  SEQNUM=188procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd6","SUBSYSTEM":"mtd","MAJOR":"90","MINOR":"12","DEVNAME":"mtd6","DEVTYPE":"mtd","SEQNUM":"189"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtd6procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd6procd: rule_handle_command(362):  SUBSYSTEM=mtdprocd: rule_handle_command(362):  MAJOR=90procd: rule_handle_command(362):  MINOR=12procd: rule_handle_command(362):  DEVNAME=mtd6procd: rule_handle_command(362):  DEVTYPE=mtdprocd: rule_handle_command(362):  SEQNUM=189procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd0ro","SUBSYSTEM":"mtd","MAJOR":"90","MINOR":"1","DEVNAME":"mtd0ro","SEQNUM":"190"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtd0roprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd0roprocd: rule_handle_command(362):  SUBSYSTEM=mtdprocd: rule_handle_command(362):  MAJOR=90procd: rule_handle_command(362):  MINOR=1procd: rule_handle_command(362):  DEVNAME=mtd0roprocd: rule_handle_command(362):  SEQNUM=190procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd1ro","SUBSYSTEM":"mtd","MAJOR":"90","MINOR":"3","DEVNAME":"mtd1ro","SEQNUM":"191"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtd1roprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd1roprocd: rule_handle_command(362):  SUBSYSTEM=mtdprocd: rule_handle_command(362):  MAJOR=90procd: rule_handle_command(362):  MINOR=3procd: rule_handle_command(362):  DEVNAME=mtd1roprocd: rule_handle_command(362):  SEQNUM=191procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd2ro","SUBSYSTEM":"mtd","MAJOR":"90","MINOR":"5","DEVNAME":"mtd2ro","SEQNUM":"192"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtd2roprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd2roprocd: rule_handle_command(362):  SUBSYSTEM=mtdprocd: rule_handle_command(362):  MAJOR=90procd: rule_handle_command(362):  MINOR=5procd: rule_handle_command(362):  DEVNAME=mtd2roprocd: rule_handle_command(362):  SEQNUM=192procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd3ro","SUBSYSTEM":"mtd","MAJOR":"90","MINOR":"7","DEVNAME":"mtd3ro","SEQNUM":"193"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtd3roprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd3roprocd: rule_handle_command(362):  SUBSYSTEM=mtdprocd: rule_handle_command(362):  MAJOR=90procd: rule_handle_command(362):  MINOR=7procd: rule_handle_command(362):  DEVNAME=mtd3roprocd: rule_handle_command(362):  SEQNUM=193procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd4ro","SUBSYSTEM":"mtd","MAJOR":"90","MINOR":"9","DEVNAME":"mtd4ro","SEQNUM":"194"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtd4roprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd4roprocd: rule_handle_command(362):  SUBSYSTEM=mtdprocd: rule_handle_command(362):  MAJOR=90procd: rule_handle_command(362):  MINOR=9procd: rule_handle_command(362):  DEVNAME=mtd4roprocd: rule_handle_command(362):  SEQNUM=194procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd5ro","SUBSYSTEM":"mtd","MAJOR":"90","MINOR":"11","DEVNAME":"mtd5ro","SEQNUM":"195"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtd5roprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd5roprocd: rule_handle_command(362):  SUBSYSTEM=mtdprocd: rule_handle_command(362):  MAJOR=90procd: rule_handle_command(362):  MINOR=11procd: rule_handle_command(362):  DEVNAME=mtd5roprocd: rule_handle_command(362):  SEQNUM=195procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd6ro","SUBSYSTEM":"mtd","MAJOR":"90","MINOR":"13","DEVNAME":"mtd6ro","SEQNUM":"196"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtd6roprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd6roprocd: rule_handle_command(362):  SUBSYSTEM=mtdprocd: rule_handle_command(362):  MAJOR=90procd: rule_handle_command(362):  MINOR=13procd: rule_handle_command(362):  DEVNAME=mtd6roprocd: rule_handle_command(362):  SEQNUM=196procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/tty","SUBSYSTEM":"tty","MAJOR":"5","MINOR":"0","DEVNAME":"tty","DEVMODE":"0666","SEQNUM":"197"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ttyprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=5procd: rule_handle_command(362):  MINOR=0procd: rule_handle_command(362):  DEVNAME=ttyprocd: rule_handle_command(362):  DEVMODE=0666procd: rule_handle_command(362):  SEQNUM=197procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=5procd: rule_handle_command(362):  MINOR=0procd: rule_handle_command(362):  DEVNAME=ttyprocd: rule_handle_command(362):  DEVMODE=0666procd: rule_handle_command(362):  SEQNUM=197procd: rule_handle_command(363): 
+procd: queue_next(281): Launched hotplug exec instance, pid=322
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ptmx","SUBSYSTEM":"tty","MAJOR":"5","MINOR":"2","DEVNAME":"ptmx","DEVMODE":"0666","SEQNUM":"198"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ptmxprocd: rule_handle_command(357):  0666procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptmxprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=5procd: rule_handle_command(362):  MINOR=2procd: rule_handle_command(362):  DEVNAME=ptmxprocd: rule_handle_command(362):  DEVMODE=0666procd: rule_handle_command(362):  SEQNUM=198procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/console","SUBSYSTEM":"tty","MAJOR":"5","MINOR":"1","DEVNAME":"console","SEQNUM":"199"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/consoleprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/consoleprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=5procd: rule_handle_command(362):  MINOR=1procd: rule_handle_command(362):  DEVNAME=consoleprocd: rule_handle_command(362):  SEQNUM=199procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/consoleprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=5procd: rule_handle_command(362):  MINOR=1procd: rule_handle_command(362):  DEVNAME=consoleprocd: rule_handle_command(362):  SEQNUM=199procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=322
+procd: queue_next(281): Launched hotplug exec instance, pid=323
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ptyp0","SUBSYSTEM":"tty","MAJOR":"2","MINOR":"0","DEVNAME":"ptyp0","SEQNUM":"200"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ptyp0procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptyp0procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=0procd: rule_handle_command(362):  DEVNAME=ptyp0procd: rule_handle_command(362):  SEQNUM=200procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptyp0procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=0procd: rule_handle_command(362):  DEVNAME=ptyp0procd: rule_handle_command(362):  SEQNUM=200procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ptyp1","SUBSYSTEM":"tty","MAJOR":"2","MINOR":"1","DEVNAME":"ptyp1","SEQNUM":"201"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ptyp1procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptyp1procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=1procd: rule_handle_command(362):  DEVNAME=ptyp1procd: rule_handle_command(362):  SEQNUM=201procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptyp1procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=1procd: rule_handle_command(362):  DEVNAME=ptyp1procd: rule_handle_command(362):  SEQNUM=201procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=323
+procd: queue_next(281): Launched hotplug exec instance, pid=324
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ptyp2","SUBSYSTEM":"tty","MAJOR":"2","MINOR":"2","DEVNAME":"ptyp2","SEQNUM":"202"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ptyp2procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptyp2procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=2procd: rule_handle_command(362):  DEVNAME=ptyp2procd: rule_handle_command(362):  SEQNUM=202procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptyp2procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=2procd: rule_handle_command(362):  DEVNAME=ptyp2procd: rule_handle_command(362):  SEQNUM=202procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=324
+procd: queue_next(281): Launched hotplug exec instance, pid=325
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ptyp3","SUBSYSTEM":"tty","MAJOR":"2","MINOR":"3","DEVNAME":"ptyp3","SEQNUM":"203"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ptyp3procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptyp3procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=3procd: rule_handle_command(362):  DEVNAME=ptyp3procd: rule_handle_command(362):  SEQNUM=203procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptyp3procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=3procd: rule_handle_command(362):  DEVNAME=ptyp3procd: rule_handle_command(362):  SEQNUM=203procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ptyp4","SUBSYSTEM":"tty","MAJOR":"2","MINOR":"4","DEVNAME":"ptyp4","SEQNUM":"204"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ptyp4procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptyp4procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=4procd: rule_handle_command(362):  DEVNAME=ptyp4procd: rule_handle_command(362):  SEQNUM=204procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptyp4procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=4procd: rule_handle_command(362):  DEVNAME=ptyp4procd: rule_handle_command(362):  SEQNUM=204procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ptyp5","SUBSYSTEM":"tty","MAJOR":"2","MINOR":"5","DEVNAME":"ptyp5","SEQNUM":"205"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ptyp5procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptyp5procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=5procd: rule_handle_command(362):  DEVNAME=ptyp5procd: rule_handle_command(362):  SEQNUM=205procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptyp5procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=5procd: rule_handle_command(362):  DEVNAME=ptyp5procd: rule_handle_command(362):  SEQNUM=205procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=325
+procd: queue_next(281): Launched hotplug exec instance, pid=326
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ptyp6","SUBSYSTEM":"tty","MAJOR":"2","MINOR":"6","DEVNAME":"ptyp6","SEQNUM":"206"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ptyp6procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptyp6procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=6procd: rule_handle_command(362):  DEVNAME=ptyp6procd: rule_handle_command(362):  SEQNUM=206procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptyp6procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=6procd: rule_handle_command(362):  DEVNAME=ptyp6procd: rule_handle_command(362):  SEQNUM=206procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ptyp7","SUBSYSTEM":"tty","MAJOR":"2","MINOR":"7","DEVNAME":"ptyp7","SEQNUM":"207"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ptyp7procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptyp7procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=7procd: rule_handle_command(362):  DEVNAME=ptyp7procd: rule_handle_command(362):  SEQNUM=207procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptyp7procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=7procd: rule_handle_command(362):  DEVNAME=ptyp7procd: rule_handle_command(362):  SEQNUM=207procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ptyp8","SUBSYSTEM":"tty","MAJOR":"2","MINOR":"8","DEVNAME":"ptyp8","SEQNUM":"208"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ptyp8procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptyp8procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=8procd: rule_handle_command(362):  DEVNAME=ptyp8procd: rule_handle_command(362):  SEQNUM=208procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptyp8procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=8procd: rule_handle_command(362):  DEVNAME=ptyp8procd: rule_handle_command(362):  SEQNUM=208procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=326
+procd: queue_next(281): Launched hotplug exec instance, pid=327
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ptyp9","SUBSYSTEM":"tty","MAJOR":"2","MINOR":"9","DEVNAME":"ptyp9","SEQNUM":"209"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ptyp9procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptyp9procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=9procd: rule_handle_command(362):  DEVNAME=ptyp9procd: rule_handle_command(362):  SEQNUM=209procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptyp9procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=9procd: rule_handle_command(362):  DEVNAME=ptyp9procd: rule_handle_command(362):  SEQNUM=209procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ptypa","SUBSYSTEM":"tty","MAJOR":"2","MINOR":"10","DEVNAME":"ptypa","SEQNUM":"210"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ptypaprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptypaprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=10procd: rule_handle_command(362):  DEVNAME=ptypaprocd: rule_handle_command(362):  SEQNUM=210procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptypaprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=10procd: rulehandle_command(362):  DEVNAME=ptypaprocd: rule_handle_command(362):  SEQNUM=210procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=327
+procd: queue_next(281): Launched hotplug exec instance, pid=328
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ptypb","SUBSYSTEM":"tty","MAJOR":"2","MINOR":"11","DEVNAME":"ptypb","SEQNUM":"211"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ptypbprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptypbprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=11procd: rule_handle_command(362):  DEVNAME=ptypbprocd: rule_handle_command(362):  SEQNUM=211procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptypbprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=11procd: rule_handle_command(362):  DEVNAME=ptypbprocd: rule_handle_command(362):  SEQNUM=211procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=328
+procd: queue_next(281): Launched hotplug exec instance, pid=329
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ptypc","SUBSYSTEM":"tty","MAJOR":"2","MINOR":"12","DEVNAME":"ptypc","SEQNUM":"212"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ptypcprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptypcprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=12procd: rule_handle_command(362):  DEVNAME=ptypcprocd: rule_handle_command(362):  SEQNUM=212procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptypcprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=12procd: rule_handle_command(362):  DEVNAME=ptypcprocd: rule_handle_command(362):  SEQNUM=212procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ptypd","SUBSYSTEM":"tty","MAJOR":"2","MINOR":"13","DEVNAME":"ptypd","SEQNUM":"213"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ptypdprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptypdprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=13procd: rule_handle_command(362):  DEVNAME=ptypdprocd: rule_handle_command(362):  SEQNUM=213procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptypdprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=13procd: rule_handle_command(362):  DEVNAME=ptypdprocd: rule_handle_command(362):  SEQNUM=213procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=329
+procd: queue_next(281): Launched hotplug exec instance, pid=330
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ptype","SUBSYSTEM":"tty","MAJOR":"2","MINOR":"14","DEVNAME":"ptype","SEQNUM":"214"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ptypeprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptypeprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=14procd: rule_handle_command(362):  DEVNAME=ptypeprocd: rule_handle_command(362):  SEQNUM=214procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptypeprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=14procd: rule_handle_command(362):  DEVNAME=ptypeprocd: rule_handle_command(362):  SEQNUM=214procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=330
+procd: queue_next(281): Launched hotplug exec instance, pid=331
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ptypf","SUBSYSTEM":"tty","MAJOR":"2","MINOR":"15","DEVNAME":"ptypf","SEQNUM":"215"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ptypfprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptypfprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=15procd: rule_handle_command(362):  DEVNAME=ptypfprocd: rule_handle_command(362):  SEQNUM=215procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ptypfprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=2procd: rule_handle_command(362):  MINOR=15procd: rule_handle_command(362):  DEVNAME=ptypfprocd: rule_handle_command(362):  SEQNUM=215procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/platform\/serial8250\/tty\/ttyS0","SUBSYSTEM":"tty","MAJOR":"4","MINOR":"64","DEVNAME":"ttyS0","SEQNUM":"216"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ttyS0procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/platform/serial8250/tty/ttyS0procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=4procd: rule_handle_command(362):  MINOR=64procd: rule_handle_command(362):  DEVNAME=ttyS0procd: rule_handle_command(362):  SEQNUM=216procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/platform/serial8250/tty/ttyS0procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=4procd: rule_handle_command(362):  MINOR=64procd: rule_handle_command(362):  DEVNAME=ttyS0procd: rule_handle_command(362):  SEQNUM=216procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=331
+procd: queue_next(281): Launched hotplug exec instance, pid=332
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/platform\/serial8250\/tty\/ttyS1","SUBSYSTEM":"tty","MAJOR":"4","MINOR":"65","DEVNAME":"ttyS1","SEQNUM":"217"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ttyS1procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/platform/serial8250/tty/ttyS1procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=4procd: rule_handle_command(362):  MINOR=65procd: rule_handle_command(362):  DEVNAME=ttyS1procd: rule_handle_command(362):  SEQNUM=217procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/platform/serial8250/tty/ttyS1procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=4procd: rule_handle_command(362):  MINOR=65procd: rule_handle_command(362):  DEVNAME=ttyS1procd: rule_handle_command(362):  SEQNUM=217procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ttyp0","SUBSYSTEM":"tty","MAJOR":"3","MINOR":"0","DEVNAME":"ttyp0","SEQNUM":"218"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ttyp0procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyp0procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=0procd: rule_handle_command(362):  DEVNAME=ttyp0procd: rule_handle_command(362):  SEQNUM=218procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyp0procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=0procd: rule_handle_command(362):  DEVNAME=ttyp0procd: rule_handle_command(362):  SEQNUM=218procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=332
+procd: queue_next(281): Launched hotplug exec instance, pid=333
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ttyp1","SUBSYSTEM":"tty","MAJOR":"3","MINOR":"1","DEVNAME":"ttyp1","SEQNUM":"219"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ttyp1procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyp1procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=1procd: rule_handle_command(362):  DEVNAME=ttyp1procd: rule_handle_command(362):  SEQNUM=219procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyp1procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=1procd: rule_handle_command(362):  DEVNAME=ttyp1procd: rule_handle_command(362):  SEQNUM=219procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=333
+procd: queue_next(281): Launched hotplug exec instance, pid=334
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ttyp2","SUBSYSTEM":"tty","MAJOR":"3","MINOR":"2","DEVNAME":"ttyp2","SEQNUM":"220"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ttyp2procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyp2procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=2procd: rule_handle_command(362):  DEVNAME=ttyp2procd: rule_handle_command(362):  SEQNUM=220procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyp2procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=2procd: rule_handle_command(362):  DEVNAME=ttyp2procd: rule_handle_command(362):  SEQNUM=220procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ttyp3","SUBSYSTEM":"tty","MAJOR":"3","MINOR":"3","DEVNAME":"ttyp3","SEQNUM":"221"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ttyp3procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyp3procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=3procd: rule_handle_command(362):  DEVNAME=ttyp3procd: rule_handle_command(362):  SEQNUM=221procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyp3procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=3procd: rule_handle_command(362):  DEVNAME=ttyp3procd: rule_handle_command(362):  SEQNUM=221procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ttyp4","SUBSYSTEM":"tty","MAJOR":"3","MINOR":"4","DEVNAME":"ttyp4","SEQNUM":"222"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ttyp4procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyp4procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=4procd: rule_handle_command(362):  DEVNAME=ttyp4procd: rule_handle_command(362):  SEQNUM=222procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyp4procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=4procd: rule_handle_command(362):  DEVNAME=ttyp4procd: rule_handle_command(362):  SEQNUM=222procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=334
+procd: queue_next(281): Launched hotplug exec instance, pid=335
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ttyp5","SUBSYSTEM":"tty","MAJOR":"3","MINOR":"5","DEVNAME":"ttyp5","SEQNUM":"223"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ttyp5procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyp5procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=5procd: rule_handle_command(362):  DEVNAME=ttyp5procd: rule_handle_command(362):  SEQNUM=223procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyp5procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=5procd: rule_handle_command(362):  DEVNAME=ttyp5procd: rule_handle_command(362):  SEQNUM=223procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ttyp6","SUBSYSTEM":"tty","MAJOR":"3","MINOR":"6","DEVNAME":"ttyp6","SEQNUM":"224"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ttyp6procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyp6procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=6procd: rule_handle_command(362):  DEVNAME=ttyp6procd: rule_handle_command(362):  SEQNUM=224procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyp6procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=6procd: rule_handle_command(362):  DEVNAME=ttyp6procd: rule_handle_command(362):  SEQNUM=224procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=335
+procd: queue_next(281): Launched hotplug exec instance, pid=336
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ttyp7","SUBSYSTEM":"tty","MAJOR":"3","MINOR":"7","DEVNAME":"ttyp7","SEQNUM":"225"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ttyp7procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyp7procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=7procd: rule_handle_command(362):  DEVNAME=ttyp7procd: rule_handle_command(362):  SEQNUM=225procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyp7procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=7procd: rule_handle_command(362):  DEVNAME=ttyp7procd: rule_handle_command(362):  SEQNUM=225procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=336
+procd: queue_next(281): Launched hotplug exec instance, pid=337
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ttyp8","SUBSYSTEM":"tty","MAJOR":"3","MINOR":"8","DEVNAME":"ttyp8","SEQNUM":"226"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ttyp8procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyp8procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=8procd: rule_handle_command(362):  DEVNAME=ttyp8procd: rule_handle_command(362):  SEQNUM=226procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyp8procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=8procd: rule_handle_command(362):  DEVNAME=ttyp8procd: rule_handle_command(362):  SEQNUM=226procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ttyp9","SUBSYSTEM":"tty","MAJOR":"3","MINOR":"9","DEVNAME":"ttyp9","SEQNUM":"227"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ttyp9procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyp9procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=9procd: rule_handle_command(362):  DEVNAME=ttyp9procd: rule_handle_command(362):  SEQNUM=227procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttyp9procd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=9procd: rule_handle_command(362):  DEVNAME=ttyp9procd: rule_handle_command(362):  SEQNUM=227procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=337
+procd: queue_next(281): Launched hotplug exec instance, pid=338
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ttypa","SUBSYSTEM":"tty","MAJOR":"3","MINOR":"10","DEVNAME":"ttypa","SEQNUM":"228"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ttypaprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttypaprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=10procd: rule_handle_command(362):  DEVNAME=ttypaprocd: rule_handle_command(362):  SEQNUM=228procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttypaprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=10procd: rule_handle_command(362):  DEVNAME=ttypaprocd: rule_handle_command(362):  SEQNUM=228procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=338
+procd: queue_next(281): Launched hotplug exec instance, pid=339
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ttypb","SUBSYSTEM":"tty","MAJOR":"3","MINOR":"11","DEVNAME":"ttypb","SEQNUM":"229"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ttypbprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttypbprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=11procd: rule_handle_command(362):  DEVNAME=ttypbprocd: rule_handle_command(362):  SEQNUM=229procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttypbprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=11procd: rule_handle_command(362):  DEVNAME=ttypbprocd: rule_handle_command(362):  SEQNUM=229procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ttypc","SUBSYSTEM":"tty","MAJOR":"3","MINOR":"12","DEVNAME":"ttypc","SEQNUM":"230"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ttypcprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttypcprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=12procd: rule_handle_command(362):  DEVNAME=ttypcprocd: rule_handle_command(362):  SEQNUM=230procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttypcprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=12procd: rule_handle_command(362):  DEVNAME=ttypcprocd: rule_handle_command(362):  SEQNUM=230procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=339
+procd: queue_next(281): Launched hotplug exec instance, pid=340
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ttypd","SUBSYSTEM":"tty","MAJOR":"3","MINOR":"13","DEVNAME":"ttypd","SEQNUM":"231"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ttypdprocd: rule_handle_command(357):  0644procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttypdprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=13procd: rule_handle_command(362):  DEVNAME=ttypdprocd: rule_handle_command(362):  SEQNUM=231procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttypdprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=13procd: rule_handle_command(362):  DEVNAME=ttypdprocd: rule_handle_command(362):  SEQNUM=231procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=340
+procd: queue_next(281): Launched hotplug exec instance, pid=341
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ttype","SUBSYSTEM":"tty","MAJOR":"3","MINOR":"14","DEVNAME":"ttype","SEQNUM":"232"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ttypeprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttypeprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=14procd: rule_handle_command(362):  DEVNAME=ttypeprocd: rule_handle_command(362):  SEQNUM=232procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttypeprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=14procd: rule_handle_command(362):  DEVNAME=ttypeprocd: rule_handle_command(362):  SEQNUM=232procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/tty\/ttypf","SUBSYSTEM":"tty","MAJOR":"3","MINOR":"15","DEVNAME":"ttypf","SEQNUM":"233"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/ttypfprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttypfprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=15procd: rule_handle_command(362):  DEVNAME=ttypfprocd: rule_handle_command(362):  SEQNUM=233procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  ttyprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/tty/ttypfprocd: rule_handle_command(362):  SUBSYSTEM=ttyprocd: rule_handle_command(362):  MAJOR=3procd: rule_handle_command(362):  MINOR=15procd: rule_handle_command(362):  DEVNAME=ttypfprocd: rule_handle_command(362):  SEQNUM=233procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=341
+procd: queue_next(281): Launched hotplug exec instance, pid=342
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/misc\/cpu_dma_latency","SUBSYSTEM":"misc","MAJOR":"10","MINOR":"63","DEVNAME":"cpu_dma_latency","SEQNUM":"234"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/cpu_dma_latencyprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/misc/cpu_dma_latencyprocd: rule_handle_command(362):  SUBSYSTEM=miscprocd: rule_handle_command(362):  MAJOR=10procd: rule_handle_command(362):  MINOR=63procd: rule_handle_command(362):  DEVNAME=cpu_dma_latencyprocd: rule_handle_command(362):  SEQNUM=234procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=342
+procd: queue_next(281): Launched hotplug exec instance, pid=343
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/misc\/network_latency","SUBSYSTEM":"misc","MAJOR":"10","MINOR":"62","DEVNAME":"network_latency","SEQNUM":"235"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/network_latencyprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/misc/network_latencyprocd: rule_handle_command(362):  SUBSYSTEM=miscprocd: rule_handle_command(362):  MAJOR=10procd: rule_handle_command(362):  MINOR=62procd: rule_handle_command(362):  DEVNAME=network_latencyprocd: rule_handle_command(362):  SEQNUM=235procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/misc\/network_throughput","SUBSYSTEM":"misc","MAJOR":"10","MINOR":"61","DEVNAME":"network_throughput","SEQNUM":"236"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/network_throughputprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/misc/network_throughputprocd: rule_handle_command(362):  SUBSYSTEM=miscprocd: rule_handle_command(362):  MAJOR=10procd: rule_handle_command(362):  MINOR=61procd: rule_handle_command(362):  DEVNAME=network_throughputprocd: rule_handle_command(362):  SEQNUM=236procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd0\/mtdblock0","SUBSYSTEM":"block","MAJOR":"31","MINOR":"0","DEVNAME":"mtdblock0","DEVTYPE":"disk","SEQNUM":"237"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtdblock0procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd0/mtdblock0procd: rule_handle_command(362):  SUBSYSTEM=blockprocd: rule_handle_command(362):  MAJOR=31procd: rule_handle_command(362):  MINOR=0procd: rule_handle_command(362):  DEVNAME=mtdblock0procd: rule_handle_command(362):  DEVTYPE=diskprocd: rule_handle_command(362):  SEQNUM=237procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  blockprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd0/mtdblock0procd: rule_handle_command(362):  SUBSYSTEM=blockprocd: rule_handle_command(362):  MAJOR=31procd: rule_handle_command(362):  MINOR=0procd: rule_handle_command(362):  DEVNAME=mtdblock0procd: rule_handle_command(362):  DEVTYPE=diskprocd: rule_handle_command(362):  SEQNUM=237procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=343
+procd: queue_next(281): Launched hotplug exec instance, pid=344
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=344
+procd: queue_next(281): Launched hotplug exec instance, pid=345
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd1\/mtdblock1","SUBSYSTEM":"block","MAJOR":"31","MINOR":"1","DEVNAME":"mtdblock1","DEVTYPE":"disk","SEQNUM":"238"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtdblock1procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd1/mtdblock1procd: rule_handle_command(362):  SUBSYSTEM=blockprocd: rule_handle_command(362):  MAJOR=31procd: rule_handle_command(362):  MINOR=1procd: rule_handle_command(362):  DEVNAME=mtdblock1procd: rule_handle_command(362):  DEVTYPE=diskprocd: rule_handle_command(362):  SEQNUM=238procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  blockprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd1/mtdblock1procd: rule_handle_command(362):  SUBSYSTEM=blockprocd: rule_handle_command(362):  MAJOR=31procd: rule_handle_command(362):  MINOR=1procd: rule_handle_command(362):  DEVNAME=mtdblock1procd: rule_handle_command(362):  DEVTYPE=diskprocd: rule_handle_command(362):  SEQNUM=238procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd2\/mtdblock2","SUBSYSTEM":"block","MAJOR":"31","MINOR":"2","DEVNAME":"mtdblock2","DEVTYPE":"disk","SEQNUM":"239"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtdblock2procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd2/mtdblock2procd: rule_handle_command(362):  SUBSYSTEM=blockprocd: rule_handle_command(362):  MAJOR=31procd: rule_handle_command(362):  MINOR=2procd: rule_handle_command(362):  DEVNAME=mtdblock2procd: rule_handle_command(362):  DEVTYPE=diskprocd: rule_handle_command(362):  SEQNUM=239procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  blockprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd2/mtdblock2procd: rule_handle_command(362):  SUBSYSTEM=blockprocd: rule_handle_command(362):  MAJOR=31procd: rule_handle_command(362):  MINOR=2procd: rule_handle_command(362):  DEVNAME=mtdblock2procd: rule_handle_command(362):  DEVTYPE=diskprocd: rule_handle_command(362):  SEQNUM=239procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd3\/mtdblock3","SUBSYSTEM":"block","MAJOR":"31","MINOR":"3","DEVNAME":"mtdblock3","DEVTYPE":"disk","SEQNUM":"240"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtdblock3procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd3/mtdblock3procd: rule_handle_command(362):  SUBSYSTEM=blockprocd: rule_handle_command(362):  MAJOR=31procd: rule_handle_command(362):  MINOR=3procd: rule_handle_command(362):  DEVNAME=mtdblock3procd: rule_handle_command(362):  DEVTYPE=diskprocd: rule_handle_command(362):  SEQNUM=240procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  blockprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd3/mtdblock3procd: rule_handle_command(362):  SUBSYSTEM=blockprocd: rule_handle_command(362):  MAJOR=31procd: rule_handle_command(362):  MINOR=3procd: rule_handle_command(362):  DEVNAME=mtdblock3procd: rule_handle_command(362):  DEVTYPE=diskprocd: rule_handle_command(362):  SEQNUM=240procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=345
+procd: queue_next(281): Launched hotplug exec instance, pid=346
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd4\/mtdblock4","SUBSYSTEM":"block","MAJOR":"31","MINOR":"4","DEVNAME":"mtdblock4","DEVTYPE":"disk","SEQNUM":"241"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtdblock4procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd4/mtdblock4procd: rule_handle_command(362):  SUBSYSTEM=blockprocd: rule_handle_command(362):  MAJOR=31procd: rule_handle_command(362):  MINOR=4procd: rule_handle_command(362):  DEVNAME=mtdblock4procd: rule_handle_command(362):  DEVTYPE=diskprocd: rule_handle_command(362):  SEQNUM=241procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  blockprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd4/mtdblock4procd: rule_handle_command(362):  SUBSYSTEM=blockprocd: rule_handle_command(362):  MAJOR=31procd: rule_handle_command(362):  MINOR=4procd: rule_handle_command(362):  DEVNAME=mtdblock4procd: rule_handle_command(362):  DEVTYPE=diskprocd: rule_handle_command(362):  SEQNUM=241procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd5\/mtdblock5","SUBSYSTEM":"block","MAJOR":"31","MINOR":"5","DEVNAME":"mtdblock5","DEVTYPE":"disk","SEQNUM":"242"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtdblock5procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd5/mtdblock5procd: rule_handle_command(362):  SUBSYSTEM=blockprocd: rule_handle_command(362):  MAJOR=31procd: rule_handle_command(362):  MINOR=5procd: rule_handle_command(362):  DEVNAME=mtdblock5procd: rule_handle_command(362):  DEVTYPE=diskprocd: rule_handle_command(362):  SEQNUM=242procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  blockprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd5/mtdblock5procd: rule_handle_command(362):  SUBSYSTEM=blockprocd: rule_handle_command(362):  MAJOR=31procd: rule_handle_command(362):  MINOR=5procd: rule_handle_command(362):  DEVNAME=mtdblock5procd: rule_handle_command(362):  DEVTYPE=diskprocd: rule_handle_command(362):  SEQNUM=242procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=346
+procd: queue_next(281): Launched hotplug exec instance, pid=347
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/mtd\/mtd6\/mtdblock6","SUBSYSTEM":"block","MAJOR":"31","MINOR":"6","DEVNAME":"mtdblock6","DEVTYPE":"disk","SEQNUM":"243"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/mtdblock6procd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd6/mtdblock6procd: rule_handle_command(362):  SUBSYSTEM=blockprocd: rule_handle_command(362):  MAJOR=31procd: rule_handle_command(362):  MINOR=6procd: rule_handle_command(362):  DEVNAME=mtdblock6procd: rule_handle_command(362):  DEVTYPE=diskprocd: rule_handle_command(362):  SEQNUM=243procd: rule_handle_command(363): 
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  blockprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/mtd/mtd6/mtdblock6procd: rule_handle_command(362):  SUBSYSTEM=blockprocd: rule_handle_command(362):  MAJOR=31procd: rule_handle_command(362):  MINOR=6procd: rule_handle_command(362):  DEVNAME=mtdblock6procd: rule_handle_command(362):  DEVTYPE=diskprocd: rule_handle_command(362):  SEQNUM=243procd: rule_handle_command(363): 
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=347
+procd: queue_next(281): Launched hotplug exec instance, pid=348
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=348
+procd: queue_next(281): Launched hotplug exec instance, pid=349
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=349
+procd: queue_next(281): Launched hotplug exec instance, pid=350
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=350
+procd: queue_next(281): Launched hotplug exec instance, pid=351
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=351
+procd: queue_next(281): Launched hotplug exec instance, pid=352
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=352
+procd: queue_next(281): Launched hotplug exec instance, pid=353
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=353
+procd: queue_next(281): Launched hotplug exec instance, pid=354
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=354
+procd: queue_next(281): Launched hotplug exec instance, pid=355
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=355
+procd: queue_next(281): Launched hotplug exec instance, pid=356
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=356
+procd: queue_next(281): Launched hotplug exec instance, pid=357
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=357
+procd: queue_next(281): Launched hotplug exec instance, pid=358
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=358
+procd: queue_next(281): Launched hotplug exec instance, pid=362
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=362
+procd: queue_next(281): Launched hotplug exec instance, pid=366
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=366
+procd: qeue_next(281): Launched hotplug exec instance, pid=370
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=370
+procd: queue_next(281): Launched hotplug exec instance, pid=374
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=374
+procd: queue_next(281): Launched hotplug exec instance, pid=378
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=378
+procd: queue_next(281): Launched hotplug exec instance, pid=382
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=382
+procd: coldplug_complete(29): Coldplug complete
+procd: procd_state_next(90): Change state 1 -> 2
+procd: - ubus -
+procd: - init -
+procd: service_handle_set(242): Create service ubus
+procd: service_instance_update(66): Create instance ubus::instance1
+procd: instance_start(201): Started instance ubus::instance1
+procd: _rc(132): running /etc/init.d/ubus running
+procd: _rc(135): glob failed on /etc/init.d/ubus
+procd: procd_inittab(274): Parsing inittab - ::sysinit:/etc/init.d/rcS S bootprocd: procd_inittab(274): Parsing inittab - ::shutdown:/etc/init.d/rcS K shutdownprocd: procd_inittab(274): Parsing inittab - ::respawn:/sbin/getty -L ttyS1 57600 vt100procd: fork_worker(78): Launched new respawn action, pid=387
+procd: _rc(132): running /etc/rc.d/S* boot
+procd: q_initd_run(68): start /etc/rc.d/S00sysfixtime boot 
+
+
+MT7628 login: procd: q_initd_complete(98): stop /etc/rc.d/S00sysfixtime boot 
+procd: q_initd_run(68): start /etc/rc.d/S10boot boot 
+procd: [   22.780000] l2tp_core: L2TP core driver, V2.0
+hotplug_handler_[   22.792000] l2tp_netlink: L2TP netlink interface
+debug(404): {{"ACTION":"add","DEVPATH":"\/module\/l2tp_core","SUBSYSTEM":"module","SEQNUM":"244"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH[   22.828000] nf_conntrack version 0.5.0 (956 buckets, 3824 max)
+":"\/module\/l2tp_netlink","SUBSYSTEM":"module","SEQNUM":"245"}}
+procd: hotplug[   22.852000] ip6_tables: (C) 2000-2006 Netfilter Core Team
+_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/ifb","SUBSYSTEM":"module","SEQNUM":"246"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/net\/ifb0","SUBSYSTEM":"net","INTERFACE":"ifb0","IFINDEX":"3","SEQNUM":"247"}}
+procd:[   22.912000] u32 classifier
+ rule_handle_com[   22.916000]     input device check on
+mand(355): Comma[   22.928000]     Actions configured
+nd: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  netprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:pro[   22.964000] Mirror/redirect action on
+cd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/net/ifb0procd: rule_handle_command(362):  SUBSYSTEM=netprocd: rule_handle_command(362):  INTERFACE=ifb0procd: rule_handle_command(362):  IFINDEX=3procd: rule_handle_command(362):  SEQNUM=247procd: rule_handle_command(363): 
+procd: queue_next(281): Launched hotplug exec instance, pid=545
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/net\/ifb0\/queues\/tx-0","SUBSYSTEM":"queues","SEQNUM":"248"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/net\/ifb1","SUBSYSTEM":"net","INTERFACE":"ifb1","IFINDEX":"4","SEQNUM":"249"}}
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  netprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/net/ifb1procd: rule_handle_command(362):  SUBSYSTEM=netprocd: rule_handle_command(362):  INTERFACE=ifb1procd: rule_handle_command(362):  IFINDEX=4procd: rule_handle_command(362):  SEQNUM=249procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/net\/ifb1\/queues\/tx-0","SUBSYSTEM":"queues","SEQNUM":"250"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/nf_defrag_ipv6","SUBSYSTEM":"module","SEQNUM":"251"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/nf_conntrack","SUBSYSTEM":"module","SEQNUM":"252"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/nf_conntrack_ipv6","SUBSYSTEM":"module","SEQNUM":"253"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/ip6_tables","SUBSYSTEM":"module","SEQNUM":"254"}}
+procd: ubus_connect_cb(58): Connected to ubus, id=06017b14
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=545
+procd: queue_next(281): Launched hotplug exec instance, pid=570
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/ip6table_filter","SUBSYSTEM":"module","SEQNUM":"255"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/ip6table_mangle","SUBSYSTEM":"module","SEQNUM":"256"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/ip6table_raw","SUBSYSTEM":"module","SEQNUM":"257"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/ip6t_REJECT","SUBSYSTEM":"module","SEQNUM":"258"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/sch_ingress","SUBSYSTEM":"module","SEQNUM":"259"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/sch_hfsc","SUBSYSTEM":"module","SEQNUM":"260"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/cls_fw","SUBSYSTEM":"module","SEQNUM":"261"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/cls_route","SUBSYSTEM":"module","SEQNUM":"262"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/cls_flow","SUBSYSTEM":"module","SEQNUM":"263"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/cls_tcindex","SUBSYSTEM":"module","SEQNUM":"264"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/cls_u32","SUBSYSTEM":"module","SEQNUM":"265"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/em_u32","SUBSYSTEM":"module","SEQNUM":"266"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/act_mirred","SUBSYSTEM":"module","SEQNUM":"267"}}
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=570
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/act_skbedit","SUBSYSTEM":"module","SEQNUM":"268"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module[   23.740000] 
+[   23.740000] 
+[   23.740000] === pAd = c0503000, size = 1476032 ===
+[   23.740000] 
+\/mt7628","SUBSY[   23.760000] <-- RTMPAllocTxRxRingMemory, Status=0, ErrorValue=0x
+STEM":"module","[   23.776000] <-- RTMPAllocAdapterBlock, Status=0
+SEQNUM":"269"}}
+[   23.788000] RtmpChipOpsHook(492): Not support for HIF_MT yet!
+
+[   23.800000] mt7628_init()-->
+[   23.808000] mt7628_init(FW(8a00), HW(8a01), CHIPID(7628))
+[   23.816000] e2.bin mt7628_init(1117)::(2), pChipCap->fw_len(63056)
+[   23.832000] mt_bcn_buf_init(218): Not support for HIF_MT yet!
+[   23.840000] <--mt7628_init()
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/net\/ra0","SUBSYSTEM":"net","INTERFA[   23.868000] ip_tables: (C) 2000-2006 Netfilter Core Team
+CE":"ra0","IFIND[   23.880000] Type=Linux
+EX":"5","SEQNUM":"270"}}
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  netprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPA[   23.940000] Ralink APSoC Hardware Watchdog Timer
+TH=/devices/virt[   23.952000] rdm_major = 253
+ual/net/ra0procd: rule_handle_command(362):  SUBSYSTEM=netprocd: rule_handle_command(362):  INTERFACE=ra0procd: rule_handle_command(362):  IFINDEX=5procd: rule_handle_command(362):  SEQNUM=270procd: rule_handle_command(363): 
+procd: queue_[   24.000000] xt_time: kernel timezone is -0000
+next(281): Launched hotplug exec instance, pid=581
+procd: hotpl[   24.020000] PPP generic driver version 2.4.2
+ug_handler_debug[   24.032000] NET: Registered protocol family 24
+(404): {{"ACTION":"add","DEVPATH[   24.048000] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+":"\/devices\/virtual\/net\/ra0\/queues\/tx-0","SUBSYSTEM":"queues","SEQNUM":"271"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/crc_ccitt","SUBSYSTEM":"module","SEQNUM":"272"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/ip_tables","SUBSYSTEM":"module","SEQNUM":"273"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/ipt_ECN","SUBSYSTEM":"module","SEQNUM":"274"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/ipt_REJECT","SUBSYSTEM":"module","SEQNUM":"275"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/iptable_filter","SUBSYSTEM":"module","SEQNUM":"276"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/iptable_mangle","SUBSYSTEM":"module","SEQNUM":"277"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/iptable_raw","SUBSYSTEM":"module","SEQNUM":"278"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/nf_conntrack_ftp","SUBSYSTEM":"module","SEQNUM":"279"}}
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=581
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/nf_conntrack_irc","SUBSYSTEM":"module","SEQNUM":"280"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/nf_defrag_ipv4","SUBSYSTEM":"module","SEQNUM":"281"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/nf_nat","SUBSYSTEM":"module","SEQNUM":"282"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/nf_nat_ftp","SUBSYSTEM":"module","SEQNUM":"283"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/nf_nat_ipv4","SUBSYSTEM":"module","SEQNUM":"284"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"remove","DEVPATH":"\/module\/nf_nat_ipv4","SUBSYSTEM":"module","SEQNUM":"285"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/nf_nat_irc","SUBSYSTEM":"module","SEQNUM":"286"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/ralink_wdt","SUBSYSTEM":"module","SEQNUM":"287"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/misc\/watchdog","SUBSYSTEM":"misc","MAJOR":"10","MINOR":"130","DEVNAME":"watchdog","SEQNUM":"288"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/watchdogprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/misc/watchdogprocd: rule_handle_command(362):  SUBSYSTEM=miscprocd: rule_handle_command(362):  MAJOR=10procd: rule_handle_command(362):  MINOR=130procd: rule_handle_command(362):  DEVNAME=watchdogprocd: rule_handle_command(362):  SEQNUM=288procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/rt_rdm","SUBSYSTEM":"module","SEQNUM":"289"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/slhc","SUBSYSTEM":"module","SEQNUM":"290"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/ts_bm","SUBSYSTEM":"module","SEQNUM":"291"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/ts_fsm","SUBSYSTEM":"module","SEQNUM":"292"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/ts_kmp","SUBSYSTEM":"module","SEQNUM":"293"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_CLASSIFY","SUBSYSTEM":"module","SEQNUM":"294"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_CT","SUBSYSTEM":"module","SEQNUM":"295"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_DSCP","SUBSYSTEM":"module","SEQNUM":"296"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_HL","SUBSYSTEM":"module","SEQNUM":"297"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_LOG","SUBSYSTEM":"module","SEQNUM":"298"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_REDIRECT","SUBSYSTEM":"module","SEQNUM":"299"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_TCPMSS","SUBSYSTEM":"module","SEQNUM":"300"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_comment","SUBSYSTEM":"module","SEQNUM":"301"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_connbytes","SUBSYSTEM":"module","SEQNUM":"302"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_connlimit","SUBSYSTEM":"module","SEQNUM":"303"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_connmark","SUBSYSTEM":"module","SEQNUM":"304"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_conntrack","SUBSYSTEM":"module","SEQNUM":"305"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_dscp","SUBSYSTEM":"module","SEQNUM":"306"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_ecn","SUBSYSTEM":"module","SEQNUM":"307"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_helper","SUBSYSTEM":"module","SEQNUM":"308"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_hl","SUBSYSTEM":"module","SEQNUM":"309"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_layer7","SUBSYSTEM":"module","SEQNUM":"310"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_length","SUBSYSTEM":"module","SEQNUM":"311"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_limit","SUBSYSTEM":"module","SEQNUM":"312"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_mac","SUBSYSTEM":"module","SEQNUM":"313"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_mark","SUBSYSTEM":"module","SEQNUM":"314"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_multiport","SUBSYSTEM":"module","SEQNUM":"315"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_nat","SUBSYSTEM":"module","SEQNUM":"316"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_recent","SUBSYSTEM":"module","SEQNUM":"317"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_state","SUBSYSTEM":"module","SEQNUM":"318"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_statistic","SUBSYSTEM":"module","SEQNUM":"319"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_string","SUBSYSTEM":"module","SEQNUM":"320"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_tcpmss","SUBSYSTEM":"module","SEQNUM":"321"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/xt_time","SUBSYSTEM":"module","SEQNUM":"322"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/ipt_MASQUERADE","SUBSYSTEM":"module","SEQNUM":"323"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/nf_conntrack_ipv4","SUBSYSTEM":"module","SEQNUM":"324"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/nf_nat_ipv4","SUBSYSTEM":"module","SEQNUM":"325"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/ppp_generic","SUBSYSTEM":"module","SEQNUM":"326"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/class\/ppp","SUBSYSTEM":"class","SEQNUM":"327"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/ppp\/ppp","SUBSYSTEM":"ppp","MAJOR":"108","MINOR":"0","DEVNAME":"ppp","SEQNUM":"328"}}
+procd: rule_handle_command(355): Command: makedevprocd: rule_handle_command(357):  /dev/pppprocd: rule_handle_command(357):  0644procd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/ppp/pppprocd: rule_handle_command(362):  SUBSYSTEM=pppprocd: rule_handle_command(362):  MAJOR=108procd: rule_handle_command(362):  MINOR=0procd: rule_handle_command(362):  DEVNAME=pppprocd: rule_handle_command(362):  SEQNUM=328procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/pppox","SUBSYSTEM":"module","SEQNUM":"329"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/iptable_nat","SUBSYSTEM":"module","SEQNUM":"330"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/l2tp_ppp","SUBSYSTEM":"module","SEQNUM":"331"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/ppp_async","SUBSYSTEM":"module","SEQNUM":"332"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/module\/pppoe","SUBSYSTEM":"module","SEQNUM":"333"}}
+procd: q_initd_complete(98): stop /etc/rc.d/S10boot boot 
+procd: q_initd_run(68): start /etc/rc.d/S10system boot 
+procd: service_handle_set(242): Create service system
+procd: _rc(132): running /etc/init.d/system running
+procd: q_initd_run(68): start /etc/init.d/system running 
+procd: q_initd_complete(98): stop /etc/rc.d/S10system boot 
+procd: q_initd_run(68): start /etc/rc.d/S11sysctl boot 
+procd: q_initd_complete(98): stop /etc/rc.d/S11sysctl boot 
+procd: q_initd_run(68): start /etc/rc.d/S12log boot 
+procd: q_initd_complete(98): stop /etc/init.d/system running 
+procd: service_handle_set(242): Create service log
+procd: service_instance_update(66): Create instance log::instance1
+procd: instance_start(201): Started instance log::instance1
+procd: _rc(132): running /etc/init.d/log running
+procd: q_initd_run(68): start /etc/init.d/log running 
+procd: q_initd_complete(98): stop /etc/rc.d/S12log boot 
+procd: q_initd_run(68): start /etc/rc.d/S19firewall boot 
+procd: q_initd_complete(98): stop /etc/init.d/log running 
+procd: watch_subscribe_cb(48): ubus event ubus.object.add
+procd: watch_subscribe_cb(57): ubus path log
+procd: service_handle_set(242): Create service firewall
+procd: _rc(132): running /etc/init.d/firewall running
+procd: q_initd_run(68): start /etc/init.d/firewall running 
+procd: q_initd_complete(98): stop /etc/rc.d/S19firewall boot 
+procd: q_initd_run(68): start /etc/rc.d/S20network boot 
+procd: q_initd_complete(98): stop /etc/init.d/firewall running 
+procd: service_handle_set(242): Create service network
+procd: instance_config_parse(455): watch for network.interface
+procd: service_instance_update(66): Create instance network::instance1
+procd: instance_start(201): Started instance network::instance1
+procd: _rc(132): running /etc/init.d/network running
+procd: q_initd_run(68): start /etc/init.d/network running 
+procd: q_initd_complete(98): stop /etc/rc.d/S20network boot 
+procd: q_initd_run(68): start /etc/rc.d/S35odhcpd boot 
+procd: watch_subscribe_cb(48): ubus event ubus.object.add
+procd: watch_subscribe_cb(57): ubus path network
+procd: watch_subscribe_cb(48): ubus event ubus.object.add
+procd: watch_subscribe_cb(57): ubus path network.device
+procd: watch_subscribe_cb(48): ubus event ubus.object.add
+procd: watch_subscribe_cb(57): ubus path network.wireless
+procd: watch_subscribe_cb(48): ubus event ubus.object.add
+procd: watch_subscribe_cb(57): ubus path network.interface
+procd: service_handle_set(242): Create service odhcpd
+procd: service_instance_update(66): Create instance odhcpd::instance1
+procd: instance_start(201): Started instance odhcpd::instance1
+procd: _rc(132): running /etc/init.d/odhcpd running
+procd: q_initd_run(68): start /etc/init.d/odhcpd running 
+procd: q_initd_complete(98): stop /etc/rc.d/S35odhcpd boot 
+procd: q_initd_run(68): start /etc/rc.d/S40fstab boot 
+procd: watch_subscribe_cb(48): ubus event ubus.object.add
+procd: watch_subscribe_cb(57): ubus path dhcp
+procd: q_initd_complete(98): stop /etc/init.d/odhcpd running 
+procd: q_initd_complete(98): stop /etc/rc.d/S40fstab boot 
+procd: q_initd_run(68): start /etc/rc.d/S50cron boot 
+procd: service_handle_set(242): Create service cron
+procd: service_instance_update(66): Create instance cron::instance1
+procd: instance_start(201): Started instance cron::instance1
+procd: _rc(132): running /etc/init.d/cron running
+procd: q_initd_run(68): start /etc/init.d/cron running 
+procd: q_initd_complete(98): stop /etc/rc.d/S50cron boot 
+procd: q_initd_run(68): start /etc/rc.d/S50qos boot 
+procd: q_initd_complete(98): stop /etc/init.d/cron running 
+[   29.212000] TX_BCN DESC a31bf000 size = 320
+[   29.220000] RX[0] DESC a3101000 size = 2048
+[   29.232000] RX[1] DESC a3104000 size = 1024
+[   29.260000] E2pAccessMode=2
+[   29.264000] cfg_mode=9
+[   29.272000] cfg_mode=9
+[   29.276000] wmode_band_equal(): Band Equal!
+[   29.288000] APSDCapable[0]=1
+[   29.292000] APSDCapable[1]=1
+[   29.300000] APSDCapable[2]=1
+[   29.304000] APSDCapable[3]=1
+[   29.312000] APSDCapable[4]=1
+[   29.316000] APSDCapable[5]=1
+[   29.324000] APSDCapable[6]=1
+[   29.328000] APSDCapable[7]=1
+[   29.332000] APSDCapable[8]=1
+[   29.340000] APSDCapable[9]=1
+[   29.344000] APSDCapable[10]=1
+[   29.352000] APSDCapable[11]=1
+[   29.356000] APSDCapable[12]=1
+[   29.364000] APSDCapable[13]=1
+[   29.368000] APSDCapable[14]=1
+[   29.376000] APSDCapable[15]=1
+[   29.380000] default ApCliAPSDCapable[0]=1
+[   29.388000] default ApCliAPSDCapable[1]=1
+[   29.404000] Key1Str is Invalid key length(0) or Type(0)
+[   29.412000] Key1Str is Invalid key length(0) or Type(0)
+[   29.424000] Key2Str is Invalid key length(0) or Type(0)
+[   29.436000] Key2Str is Invalid key length(0) or Type(0)
+[   29.444000] Key3Str is Invalid key length(0) or Type(0)
+[   29.456000] Key3Str is Invalid key length(0) or Type(0)
+[   29.468000] Key4Str is Invalid key length(0) or Type(0)
+[   29.476000] Key4Str is Invalid key length(0) or Type(0)
+[   29.544000] RTMPSetDefaultChannel() : default channel to 1 
+[   29.556000] load fw image from fw_header_image
+[   29.564000] AndesMTLoadFwMethod1(2174)::pChipCap->fw_len(63056)
+[   29.576000] FW Version:_e2_mp
+[   29.584000] FW Build Date:20150211175503
+[   29.592000] CmdAddressLenReq:(ret = 0)
+[   29.600000] CmdFwStartReq: override = 1, address = 1048576
+[   29.608000] CmdStartDLRsp: WiFI FW Download Success
+[   29.632000] MtAsicDMASchedulerInit(): DMA Scheduler Mode=0(LMAC)
+[   29.644000] efuse_probe: efuse = 10000002
+[   29.652000] RtmpChipOpsEepromHook::e2p_type=2, inf_Type=4
+[   29.664000] RtmpEepromGetDefault::e2p_dafault=2
+[   29.672000] RtmpChipOpsEepromHook: E2P type(2), E2pAccessMode = 2, E2P default = 2
+[   29.688000] NVM is FLASH mode
+[   29.692000] 1. Phy Mode = 14
+[   29.864000] Country Region from e2p = ffff
+[   29.872000] tssi_1_target_pwr_g_band = 39
+[   29.880000] 2. Phy Mode = 14
+[   29.884000] 3. Phy Mode = 14
+[   29.892000] NICInitPwrPinCfg(11): Not support for HIF_MT yet!
+[   29.904000] NICInitializeAsic(651): Not support rtmp_mac_sys_reset () for HIF_MT yet!
+[   29.920000] mt_mac_init()-->
+[   29.924000] MtAsicInitMac()-->
+[   29.932000] mt7628_init_mac_cr()-->
+[   29.936000] MtAsicSetMacMaxLen(1241): Set the Max RxPktLen=1024!
+[   29.948000] <--mt_mac_init()
+[   29.956000] WTBL Segment 1 info:
+[   29.964000] MemBaseAddr/FID:0x28000/0
+[   29.968000] EntrySize/Cnt:32/128
+[   29.976000] WTBL Segment 2 info:
+[   29.984000] MemBaseAddr/FID:0x40000/0
+[   29.992000] EntrySize/Cnt:64/128
+[   29.996000] WTBL Segment 3 info:
+[   30.004000] MemBaseAddr/FID:0x42000/64
+[   30.012000] EntrySize/Cnt:64/128
+[   30.020000] WTBL Segment 4 info:
+[   30.024000] MemBaseAddr/FID:0x44000/128
+[   30.032000] EntrySize/Cnt:32/128
+[   30.040000] AntCfgInit(2876): Not support for HIF_MT yet!
+[   30.052000] MCS Set = ff ff 00 00 01
+[   30.060000] MtAsicSetChBusyStat(826): Not support for HIF_MT yet!
+[   30.572000] CmdSlotTimeSet:(ret = 0)
+[   32.732000] [PMF]ap_pmf_init:: apidx=0, MFPC=0, MFPR=0, SHA256=0
+[   32.744000] [PMF]ap_pmf_init:: apidx=1, MFPC=0, MFPR=0, SHA256=0
+[   32.756000] MtAsicSetRalinkBurstMode(2919): Not support for HIF_MT yet!
+[   32.768000] MtAsicSetPiggyBack(763): Not support for HIF_MT yet!
+[   32.800000] MtAsicSetTxPreamble(2898): Not support for HIF_MT yet!
+[   32.812000] MtAsicSetPreTbtt(): bss_idx=0, PreTBTT timeout = 0xf0
+[   32.824000] Main bssid = e0:43:a5:13:d9:38
+[   32.832000] <==== rt28xx_init, Status=0
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/net\[   32.856000] RT28xx_Monitor_Init: 764 !!!!####!!!!!!
+/ra1","SUBSYSTEM":"net","INTERFACE":"ra1","IFINDEX":"6","SEQNUM":"334"}}
+procd: rule_handle_command(355): Comma[   32.884000] mt7628_set_ed_cca: TURN OFF EDCCA  mac 0x10618 = 0xd7083f0f
+nd: execprocd: r[   32.900000] WiFi Startup Cost (ra0): 3.692s
+ule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  netprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/net/ra1procd: rule_handle_command(362):  SUBSYSTEM=netprocd: rule_handle_command(362):  INTERFACE=ra1procd: rule_handle_command(362):  IFINDEX=6procd: rule_handle_command(362):  SEQNUM=334procd: rule_handle_command(363): 
+procd: queue_next(281): Launched hotplug exec instance, pid=870
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH[   33.016000] Raeth v3.1 (":"\/devices\/viTaskletrtual\/net\/ra1\,SkbRecycle/queues\/tx-0",")
+SUBSYSTEM":"queu[   33.036000] 
+[   33.036000] phy_tx_ring = 0x02ac0000, tx_ring = 0xa2ac0000
+es","SEQNUM":"33[   33.052000] 
+[   33.052000] phy_rx_ring0 = 0x02ac1000, rx_ring0 = 0xa2ac1000
+5"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/net\/ap[   33.084000] GMAC1_MAC_ADRH -- : 0x0000e043
+cli0","SUBSYSTEM[   33.092000] GMAC1_MAC_ADRL -- : 0xa513d93a
+":"net","INTERFA[   33.104000] RT305x_ESW: Link Status Changed
+CE":"apcli0","IFINDEX":"7","SEQNUM":"336"}}
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  netprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/net/apcli0procd: rule_handle_command(362):  SUBSYSTEM=netprocd: rule_handle_command(362):  INTERFACE=apcli0procd: rule_handle_command(362):  IFINDEX=7procd: rule_handle_command(362):  SEQNUM=336procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/net\/apcli0\/queues\/tx-0","SUBSYSTEM":"queues","SEQNUM":"337"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/net\/apcli1","SUBSYSTEM":"net","INTERFACE":"apcli1","IFINDEX":"8","SEQNUM":"338"}}
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  netprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/net/apcli1procd: rule_handle_command(362):  SUBSYSTEM=netprocd: rule_handle_command(362):  INTERFACE=apcli1procd: rule_handle_command(362):  IFINDEX=8procd: rule_handle_command(362):  SEQNUM=338procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/net\/apcli1\/queues\/tx-0","SUBSYSTEM":"queues","SEQNUM":"339"}}
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/net\/mon0","SUBSYSTEM":"net","INTERFACE":"mon0","IFINDEX":"9","SEQNUM":"340"}}
+procd: rule_handle_command(355): Command: execprocd: rule_handle_[   33.428000] device eth0.1 entered promiscuous mode
+command(357):  /[   33.440000] device eth0 entered promiscuous mode
+sbin/hotplug-callprocd: rule_handle_command(357):  netprocd: rul[   33.464000] br-lan: port 1(eth0.1) entered forwarding state
+e_handle_command[   33.476000] br-lan: port 1(eth0.1) entered forwarding state
+(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/net/mon0procd: rule_handle_command(362):  SUBSYSTEM=netprocd: rule_handle_command(362):  INTERFACE=mon0procd: rule_handle_command(362):  IFINDEX=9procd: rule_handle_command(362):  SEQNUM=340procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/net\/mon0\/queues\/tx-0","SUBSYSTEM":"queues","SEQNUM":"341"}}
+procd: watch_subscribe_cb(48): ubus event ubus.object.add
+procd: watch_subscribe_cb(57): ubus path network.interface.loopback
+procd: watch_subscribe_cb(48): ubus event ubus.object.add
+procd: watch_subscribe_cb(57): ubus path network.interface.lan
+procd: watch_subscribe_cb(48): ubus event ubus.object.add
+procd: watch_subscribe_cb(57): ubus path network.interface.wan
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/net\/br-lan","SUBSYSTEM":"net","DEVTYPE":"bridge","INTERFACE":"br-lan","IFINDEX":"10","SEQNUM":"342"}}
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  netprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/net/br-lanprocd: rule_handle_command(362):  SUBSYSTEM=netprocd: rule_handle_command(362):  DEVTYPE=bridgeprocd: rule_handle_command(362):  INTERFACE=br-lanprocd: rule_handle_command(362):  IFINDEX=10procd: rule_handle_command(362):  SEQNUM=342procd: rule_handle_command(363): 
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/net\/br-lan\/queues\/tx-0","SUBSYSTEM":"queues","SEQNUM":"343"}}
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=870
+procd: queue_next(281): Launched hotplug exec instance, pid=892
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=892
+procd: queue_next(281): Launched hotplug exec instance, pid=903
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=903
+procd: queue_next(281): Launched hotplug exec instance, pid=911
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=911
+procd: queue_next(281): Launched hotplug exec instance, pid=918
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=918
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/net\/eth0.1","SUBSYSTEM":"net","DEVTYPE":"vlan","INTERFACE":"eth0.1","IFINDEX":"11","SEQNUM":"344"}}
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  netprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/net/eth0.1procd: rule_handle_command(362):  SUBSYSTEM=netprocd: rule_handle_command(362):  DEVTYPE=vlanprocd: rule_handle_command(362):  INTERFACE=eth0.1procd: rule_handle_command(362):  IFINDEX=11procd: rule_handle_command(362):  SEQNUM=344procd: rule_handle_command(363): 
+procd: queue_next(281): Launched hotplug exec instance, pid=931
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/net\/eth0.1\/queues\/tx-0","SUBSYSTEM":"queues","SEQNUM":"345"}}
+procd: watch_notify_cb(107): Received ubus notify 'interface.update': {"interface":"lan","up":true,"pending":false,"available":true,"autostart":true,"uptime":0,"l3_device":"br-lan","proto":"static","device":"br-lan","updated":["addresses"],"metric":0,"delegation":true,"ipv4-address":[{"address":"192.168.168.1","mask":24}],"ipv6-address":[],"ipv6-prefix":[],"ipv6-prefix-assignment":[{"address":"fdc0:c548:79fe::","mask":60}],"route":[],"dns-server":[],"dns-search":[],"inactive":{"ipv4-address":[],"ipv6-address":[],"route":[],"dns-server":[],"dns-search":[]},"data":{}}
+procd: watch_notify_cb(107): Received ubus notify 'interface.update': {"interface":"loopback","up":true,"pending":false,"available":true,"autostart":true,"uptime":0,"l3_device":"lo","proto":"static","device":"lo","updated":["addresses"],"metric":0,"delegation":true,"ipv4-address":[{"address":"127.0.0.1","mask":8}],"ipv6-address":[],"ipv6-prefix":[],"ipv6-prefix-assignment":[],"route":[],"dns-server":[],"dns-search":[],"inactive":{"ipv4-address":[],"ipv6-address":[],"route":[],"dns-server":[],"dns-search":[]},"data":{}}
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=931
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/net\/eth0.2","SUBSYSTEM":"net","DEVTYPE":"vlan","INTERFACE":"eth0.2","IFINDEX":"12","SEQNUM":"346"}}
+procd: rule_handle_command(355): Command: execprocd: rule_handle_command(357):  /sbin/hotplug-callprocd: rule_handle_command(357):  netprocd: rule_handle_command(358): 
+procd: rule_handle_command(360): Message:procd: rule_handle_command(362):  ACTION=addprocd: rule_handle_command(362):  DEVPATH=/devices/virtual/net/eth0.2procd: rule_handle_command(362):  SUBSYSTEM=netprocd: rule_handle_command(362):  DEVTYPE=vlanprocd: rule_handle_command(362):  INTERFACE=eth0.2procd: rule_handle_command(362):  IFINDEX=12procd: rule_handle_command(362):  SEQNUM=346procd: rule_handle_command(363): 
+procd: queue_next(281): Launched hotplug exec instance, pid=995
+procd: hotplug_handler_debug(404): {{"ACTION":"add","DEVPATH":"\/devices\/virtual\/net\/eth0.2\/queues\/tx-0","SUBSYSTEM":"queues","SEQNUM":"347"}}
+procd: queue_proc_cb(286): Finished hotplug exec instance, pid=995
+[   34.900000] device ra0 entered promiscuous mode
+[   34.908000] br-lan: port 2(ra0) entered forwarding state
+[   34.920000] br-lan: port 2(ra0) entered forwarding state
+[   35.480000] br-lan: port 1(eth0.1) entered forwarding state
+procd: q_initd_complete(98): stop /etc/init.d/network running 
+procd: service_handle_set(242): Create service qos
+procd: _rc(132): running /etc/init.d/qos running
+procd: q_initd_run(68): start /etc/init.d/qos running 
+procd: q_initd_complete(98): stop /etc/rc.d/S50qos boot 
+procd: q_initd_run(68): start /etc/rc.d/S50telnet boot 
+procd: q_initd_complete(98): stop /etc/init.d/qos running 
+procd: service_handle_set(242): Create service telnet
+procd: service_instance_update(66): Create instance telnet::instance1
+procd: instance_start(201): Started instance telnet::instance1
+procd: _rc(132): running /etc/init.d/telnet running
+procd: q_initd_run(68): start /etc/init.d/telnet running 
+procd: q_initd_complete(98): stop /etc/rc.d/S50telnet boot 
+procd: q_initd_run(68): start /etc/rc.d/S50uhttpd boot 
+procd: q_initd_complete(98): stop /etc/init.d/telnet running 
+procd: service_handle_set(242): Create service uhttpd
+procd: service_instance_update(66): Create instance uhttpd::instance1
+procd: instance_start(201): Started instance uhttpd::instance1
+procd: _rc(132): running /etc/init.d/uhttpd running
+procd: q_initd_run(68): start /etc/init.d/uhttpd running 
+[   36.924000] br-lan: port 2(ra0) entered forwarding state
+procd: q_initd_complete(98): stop /etc/rc.d/S50uhttpd boot 
+procd: q_initd_run(68): start /etc/rc.d/S60dnsmasq boot 
+procd: q_initd_complete(98): stop /etc/init.d/uhttpd running 
+procd: q_initd_complete(98): stop /etc/rc.d/S60dnsmasq boot 
+procd: q_initd_run(68): start /etc/rc.d/S95ddns boot 
+procd: q_initd_complete(98): stop /etc/rc.d/S95ddns boot 
+procd: q_initd_run(68): start /etc/rc.d/S95done boot 
+procd: q_initd_complete(98): stop /etc/rc.d/S95done boot 
+procd: q_initd_run(68): start /etc/rc.d/S96led boot 
+procd: q_initd_complete(98): stop /etc/rc.d/S96led boot 
+procd: q_initd_run(68): start /etc/rc.d/S98apreport boot 
+procd: service_handle_set(242): Create service dnsmasq
+procd: service_instance_update(66): Create instance dnsmasq::instance1
+procd: instance_start(201): Started instance dnsmasq::instance1
+procd: _rc(132): running /etc/init.d/dnsmasq running
+procd: q_initd_run(68): start /etc/init.d/dnsmasq running 
+procd: q_initd_complete(98): stop /etc/init.d/dnsmasq running 
+procd: service_handle_set(238): Update service dnsmasq
+procd: service_instance_update(58): Update instance dnsmasq::instance1
+procd: _rc(132): running /etc/init.d/dnsmasq running
+procd: q_initd_run(68): start /etc/init.d/dnsmasq running 

@@ -1,0 +1,324 @@
+[04000C0B][04000D08]
+DDR Calibration DQS reg = 00008885
+
+
+U-Boot 1.1.3 (Dec 25 2017 - 22:59:38)
+
+Board: Ralink APSoC DRAM:  64 MB
+relocate_code Pointer at: 83fb8000
+flash manufacture id: ef, device id 40 17
+find flash: W25Q64BV
+*** Warning - bad CRC, using default environment
+
+============================================
+Ralink UBoot Version: 4.3.0.0
+--------------------------------------------
+ASIC 7628_MP (Port5<->None)
+DRAM component: 512 Mbits DDR, width 16
+DRAM bus: 16 bit
+Total memory: 64 MBytes
+Flash component: SPI Flash
+Date:Dec 25 2017  Time:22:59:38
+============================================
+icache: sets:512, ways:4, linesz:32 ,total:65536
+dcache: sets:256, ways:4, linesz:32 ,total:32768
+
+ ##### The CPU freq = 580 MHZ ####
+ estimate memory size =64 Mbytes
+RESET MT7628 PHY!!!!!!
+Please choose the operation:
+   1: Load system code to SDRAM via TFTP.
+   2: Load system code then write to Flash via TFTP.
+   3: Boot system code via Flash (default).
+   4: Entr boot command line interface.
+   7: Load Boot Loader code then write to Flash via Serial.
+   9: Load Boot Loader code then write to Flash via TFTP.
+default: 3                                                                    0
+
+3: System Boot system code via Flash.
+## Booting image at bc050000 ...
+   Image Name:   OpenWrt Linux-3.10.14-p112871
+   Image Type:   MIPS Linux Kernel Image (lzma compressed)
+   Data Size:    1279753 Bytes =  1.2 MB
+   Load Address: 80000000
+   Entry Point:  80000000
+   Verifying Checksum ... OK
+   Uncompressing Kernel Image ... OK
+No initrd
+## Transferring control to Linux (at address 80000000) ...
+## Giving linux memsize in MB, 64
+
+Starting kernel ...
+
+
+LINUX started...
+
+ THIS IS ASIC
+[    0.000000] Linux version 3.10.14 (tonnyy@ubuntu) (gcc version 4.8.3 (OpenWrt/Linaro GCC 4.8-2014.04 unknown) ) #63 Sun Oct 27 23:00:22 CST 2019
+[    0.000000]
+[    0.000000]  The CPU feqenuce set to 575 MHz
+[    0.000000] CPU0 revision is: 00019655 (MIPS 24KEc)
+[    0.000000] Software DMA cache coherency
+[    0.000000] Determined physical RAM map:
+[    0.000000]  memory: 04000000 @ 00000000 (usable)
+[    0.000000] Initrd not found or empty - disabling initrd
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x00000000-0x03ffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x00000000-0x03ffffff]
+[    0.000000] Primary instruction cache 64kB, 4-way, VIPT, linesize 32 bytes.
+[    0.000000] Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 16256
+[    0.000000] Kernel command line: console=ttyS1,57600n8 root=/dev/mtdblock5 rootfstype=squashfs,jffs2
+[    0.000000] PID hash table entries: 256 (order: -2, 1024 bytes)
+[    0.000000] Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Writing ErrCtl register=0000a869
+[    0.000000] Readback ErrCtl register=0000a869
+[    0.000000] Memory: 61020k/65536k available (2851k kernel code, 4472k reserved, 679k data, 180k init, 0k highmem)
+[    0.000000] NR_IRQS:128
+[    0.000000] console [ttyS1] enabled
+[    0.096000] Calibrating delay loop... 382.46 BogoMIPS (lpj=764928)
+[    0.128000] pid_max: default: 32768 minimum: 301
+[    0.132000] Mount-cache hash table entries: 512
+[    0.136000] NET: Registered protocol family 16
+[    0.140000] RALINK_GPIOMODE = 54050404
+[    0.144000] RALINK_GPIOMODE = 54040404
+[    0.244000] ***** Xtal 40MHz *****
+[    0.248000] start PCIe register access
+[    0.748000] RALINK_RSTCTRL = 2400000
+[    0.752000] RALINK_CLKCFG1 = fdbfffc0
+[    0.756000]
+[    0.756000] *************** MT7628 PCIe RC mode *************
+[    1.256000] PCIE0 no card, disable it(RST&CLK)
+[    1.284000] bio: create slab <bio-0> at 0
+[    1.288000] usbcore: registered new interface driver usbfs
+[    1.292000] usbcore: registered new interface driver hub
+[    1.296000] usbcore: registered new device driver usb
+[    1.300000] cfg80211: Calling CRDA to update world regulatory domain
+[    1.304000] Switching to clocksource MIPS
+[    1.308000] NET: Registered protocol family 2
+[    1.320000] TCP established hash table entries: 512 (order: 0, 4096 bytes)
+[    1.332000] TCP bind hash table entries: 512 (order: -1, 2048 bytes)
+[    1.344000] TCP: Hash tables configured (established 512 bind 512)
+[    1.356000] TCP: reno registered
+[    1.364000] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    1.376000] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    1.388000] NET: Registered protocol family 1
+[    1.396000] MTK/Ralink EHCI/OHCI init.
+[    1.408000] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    1.420000] jffs2: version 2.2. (NAND) (SUMMARY)  (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+[    1.440000] msgmni has been set to 119
+[    1.448000] io scheduler noop registered (default)
+[    1.468000] Serial: 8250/16550 driver, 2 ports, IRQ sharing disabled
+[    1.480000] serial8250: ttyS0 at MMIO 0x10000d00 (irq = 21) is a 16550A
+[    1.492000] serial8250: ttyS1 at MMIO 0x10000c00 (irq = 20) is a 16550A
+[    1.508000] Ralink gpio driver initialized
+[    1.516000] flash manufacture id: ef, device id 40 17
+[    1.528000] get_flash_id: ret: 0
+[    1.532000] W25Q64BV(ef 40170000) (8192 Kbytes)
+[    1.544000] mtd .name = raspi, .size = 0x00800000 (8M) .erasesize = 0x00010000 (64K) .numeraseregions = 0
+[    1.560000] Creating 5 MTD partitions on "raspi":
+[    1.572000] 0x000000000000-0x000000800000 : "ALL"
+[    1.584000] 0x000000000000-0x000000030000 : "Bootloader"
+[    1.596000] 0x000000030000-0x000000040000 : "Config"
+[    1.604000] 0x000000040000-0x000000050000 : "Factory"
+[    1.616000] 0x000000050000-0x000000800000 : "firmware"
+[    1.628000] 0x000000188749-0x000000800000 : "rootfs"
+[    1.640000] mtd: partition "rootfs" must either start or end on erase block boundary or be smaller than an erase block -- forcing read-only
+[    1.668000] mtd: partition "rootfs_data" created automatically, ofs=0x450000, len=0x3b0000
+[    1.684000] 0x000000450000-0x000000800000 : "rootfs_data"
+[    1.696000] GMAC1_MAC_ADRH -- : 0x0000e043
+[    1.704000] GMAC1_MAC_ADRL -- : 0xa513d93a
+[    1.712000] Ralink APSoC Ethernet Driver Initilization. v3.1  256 rx/tx descriptors allocated, mtu = 1500!
+[    1.732000] GMAC1_MAC_ADRH -- : 0x0000e043
+[    1.740000] GMAC1_MAC_ADRL -- : 0xa513d93a
+[    1.748000] PROC INIT OK!
+[    1.752000] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.768000] ehci-pci: EHCI PCI platform driver
+[    1.776000] ehci-platform: EHCI generic platform driver
+[    1.808000] ******MT7628 mtk phy
+[    1.812000] *****run project phy.
+[    1.828000] FM_OUT value: u4FmOut = 0(0x00000000)
+[    1.844000] FM_OUT value: u4FmOut = 121(0x00000079)
+[    1.852000] FM detection done! loop = 1
+[    1.868000] SR calibration value u1SrCalVal = 7
+[    1.876000] *********Execute mt7628_phy_init!!
+[    1.884000] ehci-platform ehci-platform: EHCI Host Controller
+[    1.896000] ehci-platform ehci-platform: new USB bus registered, assigned bus number 1
+[    1.912000] ehci-platform ehci-platform: irq 18, io mem 0x101c0000
+[    1.936000] ehci-platform ehci-platform: USB 2.0 started, EHCI 1.00
+[    1.948000] hub 1-0:1.0: USB hub found
+[    1.956000] hub 1-0:1.0: 1 port detected
+[    1.964000] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.996000] *********Execute mt7628_phy_init!!
+[    2.004000] ohci-platform ohci-platform: Generic Platform OHCI Controller
+[    2.020000] ohci-platform ohci-platform: new USB bus registered, assigned bus number 2
+[    2.036000] ohci-platform ohci-platform: irq 18, io mem 0x101c1000
+[    2.108000] hub 2-0:1.0: USB hub found
+[    2.116000] hub 2-0:1.0: 1 port detected
+[    2.124000] TCP: cubic registered
+[    2.132000] NET: Registered protocol family 10
+[    2.140000] NET: Registered protocol family 17
+[    2.148000] 8021q: 802.1Q VLAN Support v1.8
+[    2.188000] registered taskstats version 1
+[    2.204000] VFS: Mounted root (squashfs filesystem) readonly on device 31:5.
+[    2.216000] Freeing unused kernel memory: 180K (80373000 - 803a0000)
+procd: Console is alive
+procd: - preinit -
+[    4.520000] Raeth v3.1 (Tasklet,SkbRecycle)
+[    4.532000]
+[    4.532000] phy_tx_ring = 0x03f9b000, tx_ring = 0xa3f9b000
+[    4.544000]
+[    4.544000] phy_rx_ring0 = 0x03f9c000, rx_ring0 = 0xa3f9c000
+[    4.572000] GMAC1_MAC_ADRH -- : 0x0000e043
+[    4.580000] GMAC1_MAC_ADRL -- : 0xa513d93a
+[    4.592000] RT305x_ESW: Link Status Changed
+Press the [f] key and hit [enter] to enter failsafe mode
+Press the [1], [2], [3] or [4] key and hit [enter] to select the debug level
+kmod: ran 1 iterations
+[    8.204000] jffs2: notice: (238) jffs2_build_xattr_subsystem: complete building xattr subsystem, 32 of xdatum (0 unchecked, 31 orphan) and 114 of xref (0 dead, 103 orphan) found.
+block: extroot: no root or overlay mount defined
+jffs2 is ready
+jffs2 is ready
+[    8.328000] jffs2: notice: (235) jffs2_build_xattr_subsystem: complete building xattr subsystem, 32 of xdatum (0 unchecked, 31 orphan) and 114 of xref (0 dead, 103 orphan) found.
+switching to overlay
+[    8.376000] ra2880stop()...Done
+[    8.380000] Free TX/RX Ring Memory!
+procd: - early -
+procd: - ubus -
+procd: - init -
+
+MT7628 login: [   10.176000] l2tp_core: L2TP core driver, V2.0
+[   10.188000] l2tp_netlink: L2TP netlink interface
+[   10.212000] nf_conntrack version 0.5.0 (956 buckets, 3824 max)
+[   10.236000] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[   10.292000] u32 classifier
+[   10.296000]     input device check on
+[   10.304000]     Actions configured
+[   10.324000] Mirror/redirect action on
+[   11.104000]
+[   11.104000]
+[   11.104000] === pAd = c0503000, size = 1476032 ===
+[   11.104000]
+[   11.124000] <-- RTMPAllocTxRxRingMemory, Status=0, ErrorValue=0x
+[   11.136000] <-- RTMPAllocAdapterBlock, Status=0
+[   11.144000] RtmpChipOpsHook(492): Not support for HIF_MT yet!
+[   11.156000] mt7628_init()-->
+[   11.164000] mt7628_init(FW(8a00), HW(8a01), CHIPID(7628))
+[   11.172000] e2.bin mt7628_init(1117)::(2), pChipCap->fw_len(63056)
+[   11.188000] mt_bcn_buf_init(218): Not support for HIF_MT yet!
+[   11.196000] <--mt7628_init()
+[   11.212000] ip_tables: (C) 2000-2006 Netfilter Core Team
+[   11.224000] Type=Linux
+[   11.280000] Ralink APSoC Hardware Watchdog Timer
+[   11.288000] rdm_major = 253
+[   11.336000] xt_time: kernel timezone is -0000
+[   11.356000] PPP generic driver version 2.4.2
+[   11.368000] NET: Registered protocol family 24
+[   11.380000] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[   16.488000] TX_BCN DESC a3120000 size = 320
+[   16.500000] RX[0] DESC a3122000 size = 2048
+[   16.508000] RX[1] DESC a3123000 size = 1024
+[   16.536000] E2pAccessMode=2
+[   16.540000] cfg_mode=9
+[   16.544000] cfg_mode=9
+[   16.552000] wmode_band_equal(): Band Equal!
+[   16.564000] APSDCapable[0]=1
+[   16.568000] APSDCapable[1]=1
+[   16.576000] APSDCapable[2]=1
+[   16.580000] APSDCapable[3]=1
+[   16.588000] APSDCapable[4]=1
+[   16.592000] APSDCapable[5]=1
+[   16.596000] APSDCapable[6]=1
+[   16.604000] APSDCapable[7]=1
+[   16.608000] APSDCapable[8]=1
+[   16.616000] APSDCapable[9]=1
+[   16.620000] APSDCapable[10]=1
+[   16.628000] APSDCapable[11]=1
+[   16.632000] APSDCapable[12]=1
+[   16.640000] APSDCapable[13]=1
+[   16.644000] APSDCapable[14]=1
+[   16.652000] APSDCapable[15]=1
+[   16.656000] default ApCliAPSDCapable[0]=1
+[   16.664000] default ApCliAPSDCapable[1]=1
+[   16.676000] Key1Str is Invalid key length(0) or Type(0)
+[   16.688000] Key1Str is Invalid key length(0) or Type(0)
+[   16.700000] Key2Str is Invalid key length(0) or Type(0)
+[   16.708000] Key2Str is Invalid key length(0) or Type(0)
+[   16.720000] Key3Str is Invalid key length(0) or Type(0)
+[   16.732000] Key3Str is Invalid key length(0) or Type(0)
+[   16.744000] Key4Str is Invalid key length(0) or Type(0)
+[   16.752000] Key4Str is Invalid key length(0) or Type(0)
+[   16.820000] RTMPSetDefaultChannel() : default channel to 1
+[   16.832000] load fw image from fw_header_image
+[   16.840000] AndesMTLoadFwMethod1(2174)::pChipCap->fw_len(63056)
+[   16.852000] FW Version:_e2_mp
+[   16.856000] FW Build Date:20150211175503
+[   16.864000] CmdAddressLenReq:(ret = 0)
+[   16.876000] CmdFwStartReq: override = 1, address = 1048576
+[   16.884000] CmdStartDLRsp: WiFI FW Download Success
+[   16.904000] MtAsicDMASchedulerInit(): DMA Scheduler Mode=0(LMAC)
+[   16.916000] efuse_probe: efuse = 10000002
+[   16.924000] RtmpChipOpsEepromHook::e2p_type=2, inf_Type=4
+[   16.932000] RtmpEepromGetDefault::e2p_dafault=2
+[   16.944000] RtmpChipOpsEepromHook: E2P type(2), E2pAccessMode = 2, E2P default = 2
+[   16.956000] NVM is FLASH mode
+[   16.964000] 1. Phy Mode = 14
+[   17.132000] Country Region from e2p = ffff
+[   17.140000] tssi_1_target_pwr_g_band = 39
+[   17.148000] 2. Phy Mode = 14
+[   17.156000] 3. Phy Mode = 14
+[   17.160000] NICInitPwrPinCfg(11): Not support for HIF_MT yet!
+[   17.172000] NICInitializeAsic(651): Not support rtmp_mac_sys_reset () for HIF_MT yet!
+[   17.188000] mt_mac_init()-->
+[   17.192000] MtAsicInitMac()-->
+[   17.200000] mt7628_init_mac_cr()-->
+[   17.208000] MtAsicSetMacMaxLen(1241): Set the Max RxPktLen=1024!
+[   17.220000] <--mt_mac_init()
+[   17.224000]  WTBL Segment 1 info:
+[   17.232000]          MemBaseAddr/FID:0x28000/0
+[   17.240000]          EntrySize/Cnt:32/128
+[   17.248000]  WTBL Segment 2 info:
+[   17.252000]          MemBaseAddr/FID:0x40000/0
+[   17.260000]          EntrySize/Cnt:64/128
+[   17.268000]  WTBL Segment 3 info:
+[   17.272000]          MemBaseAddr/FID:0x42000/64
+[   17.280000]          EntrySize/Cnt:64/128
+[   17.288000]  WTBL Segment 4 info:
+[   17.296000]          MemBaseAddr/FID:0x44000/128
+[   17.304000]          EntrySize/Cnt:32/128
+[   17.308000] AntCfgInit(2876): Not support for HIF_MT yet!
+[   17.320000] MCS Set = ff ff 00 00 01
+[   17.328000] MtAsicSetChBusyStat(826): Not support for HIF_MT yet!
+[   17.840000] CmdSlotTimeSet:(ret = 0)
+[   20.008000] [PMF]ap_pmf_init:: apidx=0, MFPC=0, MFPR=0, SHA256=0
+[   20.020000] [PMF]ap_pmf_init:: apidx=1, MFPC=0, MFPR=0, SHA256=0
+[   20.032000] MtAsicSetRalinkBurstMode(2919): Not support for HIF_MT yet!
+[   20.044000] MtAsicSetPiggyBack(763): Not support for HIF_MT yet!
+[   20.076000] MtAsicSetTxPreamble(2898): Not support for HIF_MT yet!
+[   20.088000] MtAsicSetPreTbtt(): bss_idx=0, PreTBTT timeout = 0xf0
+[   20.100000] Main bssid = e0:43:a5:13:d9:38
+[   20.108000] <==== rt28xx_init, Status=0
+[   20.124000] RT28xx_Monitor_Init: 764 !!!!####!!!!!!
+[   20.136000] mt7628_set_ed_cca: TURN OFF EDCCA  mac 0x10618 = 0xd7083f0f
+[   20.148000] WiFi Startup Cost (ra0): 3.660s
+[   20.260000] Raeth v3.1 (Tasklet,SkbRecycle)
+[   20.268000]
+[   20.268000] phy_tx_ring = 0x02aaf000, tx_ring = 0xa2aaf000
+[   20.284000]
+[   20.284000] phy_rx_ring0 = 0x02ab0000, rx_ring0 = 0xa2ab0000
+[   20.312000] GMAC1_MAC_ADRH -- : 0x0000e043
+[   20.320000] GMAC1_MAC_ADRL -- : 0xa513d93a
+[   20.328000] RT305x_ESW: Link Status Changed
+[   20.512000] device eth0.1 entered promiscuous mode
+[   20.524000] device eth0 entered promiscuous mode
+[   20.540000] br-lan: port 1(eth0.1) entered forwarding state
+[   20.548000] br-lan: port 1(eth0.1) entered forwarding state
+[   22.268000] device ra0 entered promiscuous mode
+[   22.276000] br-lan: port 2(ra0) entered forwarding state
+[   22.288000] br-lan: port 2(ra0) entered forwarding state
+[   22.552000] br-lan: port 1(eth0.1) entered forwarding state
+[   24.292000] br-lan: port 2(ra0) entered forwarding state
+procd: - init complete -
